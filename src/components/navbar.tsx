@@ -7,6 +7,8 @@ import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
 import { ConnectWallet } from "@thirdweb-dev/react";
+import { useAddress } from "@thirdweb-dev/react";
+import { darkTheme, lightTheme } from "@thirdweb-dev/react";
 
 // Assets :
 import logo from "@assets/images/logo.png";
@@ -34,10 +36,10 @@ const Navbar = () => {
       setIsScrolled(scrolled);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -92,10 +94,19 @@ const Navbar = () => {
     }
   }, []);
 
+  const address = useAddress();
+  
+
   return (
-    <nav className={`fixed left-0 top-0 z-[9999] flex h-fit w-screen flex-row items-center justify-between px-12 py-6 ${ isScrolled ? 'bg-gradient-to-br from-[#201D26] to-[#1D1B20] shadow-sm shadow-[#5C5667] rounded-b-lg' : 'bg-transparent'}`}>
+    <nav
+      className={`fixed left-0 top-0 z-[9999] flex h-fit w-screen flex-row items-center justify-between px-12 py-6 ${
+        isScrolled
+          ? "rounded-b-lg bg-gradient-to-br from-[#201D26] to-[#1D1B20] shadow-sm shadow-[#5C5667]"
+          : "bg-transparent"
+      }`}
+    >
       <div className="flex flex-row items-center justify-start gap-10">
-        <Link href={"/"}>
+        <Link href={"/index"}>
           <Image src={logo} width={60} height={65} alt=""></Image>
         </Link>
         <div className="flex flex-row items-center justify-evenly gap-8">
@@ -114,16 +125,21 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex flex-row items-center justify-end gap-3">
-        <div className="flex flex-row items-center justify-center gap-0 rounded-2xl bg-[#ffe500] px-2 py-1">
-          <LiaWalletSolid color="#000000" size={30} />
-          <ConnectWallet className=" bg-transparent p-0" />
+        <div className={`flex flex-row items-center justify-center gap-0 rounded-2xl ${address ? "" : "bg-[#ffe500]"} px-2 py-1`}>
+          {
+            address ? "" : (<LiaWalletSolid color="#000000" size={30} />)
+          }
+          
+          <ConnectWallet theme={"dark"} className=" bg-transparent p-0" />
         </div>
-        <div className=" flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-lg border border-[#F7E16B] px-2 py-[.7rem] ">
-          <FaRegCircleUser size={25} color="#F7E16B" />
-          <h5 className="montreal mr-1 text-lg capitalize text-whiteText-500">
-            {t("profile")}
-          </h5>
-        </div>
+        <Link href={"/profile"}>
+          <div className=" flex h-fit w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-lg border border-[#F7E16B] px-2 py-[.7rem] ">
+            <FaRegCircleUser size={25} color="#F7E16B" />
+            <h5 className="montreal mr-1 text-lg capitalize text-whiteText-500">
+              {t("profile")}
+            </h5>
+          </div>
+        </Link>
         <Menu
           align={"end"}
           direction="bottom"

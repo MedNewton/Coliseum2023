@@ -154,3 +154,10 @@ html::-webkit-scrollbar {
     -o-animation: rotating 20s linear infinite;
     animation: rotating 20s linear infinite;
   }
+
+  .tw-connected-wallet{
+    font-family: 'montrealMedium' !important;
+    background-color:  #343238 !important;
+    padding-top: .7rem !important;
+    padding-bottom: .7rem !important;
+  }
