@@ -18,8 +18,8 @@ const Stake: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Coliseum - Trade</title>
-				<meta name="description" content="Coliseum project - Trade" />
+				<title>Coliseum - Stake</title>
+				<meta name="description" content="Coliseum project - Stake" />
 				<link rel="icon" href={logo.src} />
 			</Head>
 			<main className="m-0 min-h-screen h-fit w-screen bg-gradient-to-br from-[#201D26] to-[#1D1B20] p-0 overflow-x-hidden">

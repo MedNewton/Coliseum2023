@@ -102,13 +102,13 @@ const Navbar = () => {
           <Link href={"/"}>
             <h5 className="montreal mb-0 text-lg text-white">{t("home")}</h5>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/trade"}>
             <h5 className="montreal mb-0 text-lg text-white">{t("trade")}</h5>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/stake"}>
             <h5 className="montreal mb-0 text-lg text-white">{t("stake")}</h5>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/about"}>
             <h5 className="montreal mb-0 text-lg text-white">{t("about")}</h5>
           </Link>
         </div>

@@ -13,13 +13,13 @@ const Footer = () => {
     <footer className="flex h-fit w-full flex-col items-center justify-center bg-[#141315] py-6 ">
       <Image src={logo} alt="coliseum" className=" scale-[0.6] "></Image>
       <div className="my-4 flex flex-row items-center justify-evenly gap-4">
-        <Link href={""}>
+        <Link href={"/trade"}>
           <h5 className="montreal mb-0 text-base text-white">{t("trade")}</h5>
         </Link>
-        <Link href={""}>
+        <Link href={"/stake"}>
           <h5 className="montreal mb-0 text-base text-white">{t("stake")}</h5>
         </Link>
-        <Link href={""}>
+        <Link href={"/about"}>
           <h5 className="montreal mb-0 text-base text-white">{t("about")}</h5>
         </Link>
         <Link href={""}>
