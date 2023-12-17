@@ -108,5 +108,9 @@
     "accountStats" : "le statistiche del tuo account",
     "spendings" : "spese totali",
     "totalbenefit" : "benefici totali",
-    "totalassetvalue" : "valore totale delle attività"
+    "totalassetvalue" : "valore totale delle attività",
+    "roadmaptitle1": "Avvia il primo convertitore Cmax",
+    "roadmaptitle2": "Presentare l'ETF Tita",
+    "roadmaptitle3": "Ecosistema di Tesoreria e Gettoni",
+    "roadmaptitle4": "Implementare la tecnologia di trading"
   }
