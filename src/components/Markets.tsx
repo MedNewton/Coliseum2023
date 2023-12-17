@@ -23,7 +23,7 @@ const MarketsSection = () => {
       <h5 className="montrealMedium text-center text-3xl text-[#F7E16B]">
         {t('marketshead')}
       </h5>
-      <p className="montreal mb-12 mt-6 w-7/12 text-center text-lg text-whiteText-500">
+      <p className="montreal mb-12 mt-6 w-11/12 lg:w-7/12 text-center text-xl lg:text-lg text-whiteText-500">
         {t('marketspara')}
       </p>
       <Marquee loop={0} pauseOnHover={true}>

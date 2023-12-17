@@ -13,6 +13,7 @@ import { FiDownload } from "react-icons/fi";
 import book from "@assets/images/book.png";
 
 import BigCircles from "@/assets/images/bigCircles";
+import smallCircles from '@assets/images/smallCircles.png'
 
 const Hero = () => {
 
@@ -22,8 +23,8 @@ const Hero = () => {
   return (
     <section>
       <Navbar />
-      <div className="mt-40 flex h-fit w-full flex-row items-start justify-start pl-16">
-        <div className="flex h-fit  w-7/12 flex-col items-start justify-start pt-20">
+      <div className="mt-40 lg:bg-transparent flex h-fit w-full flex-row items-start justify-start px-4 lg:pl-16">
+        <div className="flex h-fit  xl:w-7/12 flex-col items-start justify-start lg:pt-20 relative z-50">
           <h5 className=" montreal mb-3 text-2xl text-whiteText-500">
             {t('firsthead')}
           </h5>
@@ -51,38 +52,45 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex h-fit w-fit flex-row items-center justify-around gap-6">
-            <button className="montrealMedium flex flex-row items-center justify-center rounded-lg bg-white px-8 py-3 uppercase text-[#1F1D26] ">
+            <button className="montrealMedium flex flex-row items-center justify-center rounded-lg bg-white text-sm lg:text-base px-8 py-3 uppercase text-[#1F1D26] ">
               {t('tradingbutton')}
             </button>
-            <button className="montrealMedium flex flex-row items-center justify-center gap-2 rounded-lg border border-white px-6 py-3 uppercase text-white ">
+            <button className="montrealMedium flex flex-row items-center justify-center gap-2 rounded-lg text-sm lg:text-base border border-white px-6 py-3 uppercase text-white ">
               <BsPlayCircle color="#FFFFFF" size={25} stroke={1} />
               <span>{t('watch')}</span>
             </button>
           </div>
         </div>
-        <div className="flex h-fit w-5/12 flex-row items-center justify-end p-0">
+        <div className="hidden lg:flex h-fit w-5/12 flex-row items-start lg:items-center lg:justify-end p-0">
           {<BigCircles />}
         </div>
+        <div id="mobileCircles" className="block lg:hidden absolute w-[45vw] h-[45vw] top-40 overflow-hidden z-0 right-0">
+        <Image src={smallCircles} alt="small circles" className="absolute top-0 -right-10"></Image>
+        </div>
       </div>
-      <div className="flex h-fit w-full flex-row items-center justify-center -mt-32">
-        <div className="mb-20 flex h-fit w-6/12 flex-row items-center justify-between rounded-xl bg-[#24222A] px-12 py-8 shadow-sm shadow-[#24222A]">
-          <div className="flex h-fit w-3/5 flex-col items-start justify-end gap-2">
-            <h5 className="montrealMedium text-2xl text-[#F7E16B] ">
+      <div className="flex h-fit w-full flex-row items-center justify-center mt-6 lg:-mt-32 px-3 lg:px-0">
+        <div className="mb-20 flex h-fit w-full lg:w-6/12 flex-col lg:flex-row items-center justify-between rounded-xl bg-[#24222A] px-4 lg:px-12 py-14 lg:py-8 shadow-sm shadow-[#24222A]">
+          <div className="flex h-fit w-full lg:w-3/5 flex-col items-start justify-end gap-2">
+            <h5 className="montrealMedium text-center lg:text-left text-2xl text-[#F7E16B] w-full">
               {t('downloadhead1')}
               <br />
               {t('downloadhead2')}
             </h5>
-            <p className="montreal w-11/12 text-lg text-whiteText-500">
+            
+            <p className="montreal text-center lg:text-left w-11/12 mx-auto lg:m-0 lg:w-11/12 text-lg text-whiteText-500">
               📥 {t('downloadparagraph')} 🚀
             </p>
-            <button className="montrealMedium mt-8 flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-xl bg-whiteBackground-500 py-3 px-3">
+            <div className="lg:hidden flex h-full w-2/5 mx-auto flex-col items-center justify-center">
+            <Image src={book} alt="whitepaper" className=" scale-75"></Image>
+          </div>
+            <button className="montrealMedium mx-auto lg:m-0 mt-8 flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-xl bg-whiteBackground-500 py-3 px-3">
               <FiDownload color="#1F1D26" size={22} />
               <h5 className=" text-base uppercase text-[#1F1D26]">
                 {t('downloadbutton')}
               </h5>
             </button>
           </div>
-          <div className="flex h-full w-2/5 flex-col items-center justify-center">
+          <div className="hidden lg:flex h-full w-2/5 flex-col items-center justify-center">
             <Image src={book} alt="whitepaper" className=" scale-75"></Image>
           </div>
         </div>

@@ -25,6 +25,7 @@ import SpanishFlag from "@assets/images/spanish.png";
 import { LiaWalletSolid } from "react-icons/lia";
 import { IoChevronDown } from "react-icons/io5";
 import { FaRegCircleUser } from "react-icons/fa6";
+import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -95,217 +96,411 @@ const Navbar = () => {
   }, []);
 
   const address = useAddress();
-  
 
   return (
-    <nav
-      className={`fixed left-0 top-0 z-[9999] flex h-fit w-screen flex-row items-center justify-between px-12 py-6 ${
-        isScrolled
-          ? "rounded-b-lg bg-gradient-to-br from-[#201D26] to-[#1D1B20] shadow-sm shadow-[#5C5667]"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="flex flex-row items-center justify-start gap-10">
-        <Link href={"/index"}>
-          <Image src={logo} width={60} height={65} alt=""></Image>
-        </Link>
-        <div className="flex flex-row items-center justify-evenly gap-8">
-          <Link href={"/"}>
-            <h5 className="montreal mb-0 text-lg text-white">{t("home")}</h5>
+    <>
+      {
+        // Desktop
+      }
+      <nav
+        className={`fixed left-0 top-0 z-[9999] hidden h-fit w-screen flex-row items-center justify-between px-12 py-6 lg:flex xl:flex ${
+          isScrolled
+            ? "rounded-b-lg bg-gradient-to-br from-[#201D26] to-[#1D1B20] shadow-sm shadow-[#5C5667]"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="flex flex-row items-center justify-start gap-10">
+          <Link href={"/index"}>
+            <Image src={logo} width={60} height={65} alt=""></Image>
           </Link>
-          <Link href={"/trade"}>
-            <h5 className="montreal mb-0 text-lg text-white">{t("trade")}</h5>
-          </Link>
-          <Link href={"/stake"}>
-            <h5 className="montreal mb-0 text-lg text-white">{t("stake")}</h5>
-          </Link>
-          <Link href={"/about"}>
-            <h5 className="montreal mb-0 text-lg text-white">{t("about")}</h5>
-          </Link>
-        </div>
-      </div>
-      <div className="flex flex-row items-center justify-end gap-3">
-        <div className={`flex flex-row items-center justify-center gap-0 rounded-2xl ${address ? "" : "bg-[#ffe500]"} px-2 py-1`}>
-          {
-            address ? "" : (<LiaWalletSolid color="#000000" size={30} />)
-          }
-          
-          <ConnectWallet theme={"dark"} className=" bg-transparent p-0" />
-        </div>
-        <Link href={"/profile"}>
-          <div className=" flex h-fit w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-lg border border-[#F7E16B] px-2 py-[.7rem] ">
-            <FaRegCircleUser size={25} color="#F7E16B" />
-            <h5 className="montreal mr-1 text-lg capitalize text-whiteText-500">
-              {t("profile")}
-            </h5>
+          <div className="flex flex-row items-center justify-evenly gap-8">
+            <Link href={"/"}>
+              <h5 className="montreal mb-0 text-lg text-white">{t("home")}</h5>
+            </Link>
+            <Link href={"/trade"}>
+              <h5 className="montreal mb-0 text-lg text-white">{t("trade")}</h5>
+            </Link>
+            <Link href={"/stake"}>
+              <h5 className="montreal mb-0 text-lg text-white">{t("stake")}</h5>
+            </Link>
+            <Link href={"/about"}>
+              <h5 className="montreal mb-0 text-lg text-white">{t("about")}</h5>
+            </Link>
           </div>
-        </Link>
-        <Menu
-          align={"end"}
-          direction="bottom"
-          arrow={true}
-          menuButton={
-            <MenuButton>
-              <div className=" flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-lg border border-[#F7E16B] px-2 py-[.7rem] ">
-                <Image
-                  src={selectedLanguage.image}
-                  alt={selectedLanguage.name}
-                  height={20}
-                  width={20}
-                  className="m-0 p-0"
-                />
-                <h5 className="montreal mr-1 text-lg uppercase text-whiteText-500">
-                  {selectedLanguage.name}
-                </h5>
-                <IoChevronDown
-                  color="#FFFFFF"
-                  size={20}
-                  className="m-0 h-fit w-fit p-0"
-                />
-              </div>
-            </MenuButton>
-          }
-          transition
-        >
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "it");
-              handleLanguageChange("it", ItalianFlag);
-            }}
+        </div>
+        <div className="flex flex-row items-center justify-end gap-3">
+          <div
+            className={`flex flex-row items-center justify-center gap-0 rounded-2xl ${
+              address ? "" : "bg-[#ffe500]"
+            } px-2 py-1`}
           >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={ItalianFlag}
-                alt="English"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>IT</h5>
-            </div>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "en");
-              handleLanguageChange("en", EnglishFlag);
-            }}
-          >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={EnglishFlag}
-                alt="English"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>EN</h5>
-            </div>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "fr");
-              handleLanguageChange("fr", FrenchFlag);
-            }}
-          >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={FrenchFlag}
-                alt="English"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>FR</h5>
-            </div>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "de");
-              handleLanguageChange("de", GermanFlag);
-            }}
-          >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={GermanFlag}
-                alt="german"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>GR</h5>
-            </div>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "es");
-              handleLanguageChange("es", SpanishFlag);
-            }}
-          >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={SpanishFlag}
-                alt="English"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>ES</h5>
-            </div>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "pr");
-              handleLanguageChange("pr", PortugueseFlag);
-            }}
-          >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={PortugueseFlag}
-                alt="English"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>PR</h5>
-            </div>
-          </MenuItem>
+            {address ? "" : <LiaWalletSolid color="#000000" size={30} />}
 
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "ru");
-              handleLanguageChange("ru", RussianFlag);
-            }}
-          >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={RussianFlag}
-                alt="English"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>RU</h5>
+            <ConnectWallet theme={"dark"} className=" bg-transparent p-0" />
+          </div>
+          <Link href={"/profile"}>
+            <div className=" flex h-fit w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-lg border border-[#F7E16B] px-2 py-[.7rem] ">
+              <FaRegCircleUser size={25} color="#F7E16B" />
+              <h5 className="montreal mr-1 text-lg capitalize text-whiteText-500">
+                {t("profile")}
+              </h5>
             </div>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "zh");
-              handleLanguageChange("zh", ChineseFlag);
-            }}
+          </Link>
+          <Menu
+            align={"end"}
+            direction="bottom"
+            arrow={true}
+            menuButton={
+              <MenuButton>
+                <div className=" flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-lg border border-[#F7E16B] px-2 py-[.7rem] ">
+                  <Image
+                    src={selectedLanguage.image}
+                    alt={selectedLanguage.name}
+                    height={20}
+                    width={20}
+                    className="m-0 p-0"
+                  />
+                  <h5 className="montreal mr-1 text-lg uppercase text-whiteText-500">
+                    {selectedLanguage.name}
+                  </h5>
+                  <IoChevronDown
+                    color="#FFFFFF"
+                    size={20}
+                    className="m-0 h-fit w-fit p-0"
+                  />
+                </div>
+              </MenuButton>
+            }
+            transition
           >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={ChineseFlag}
-                alt="English"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>CN</h5>
-            </div>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              localStorage.setItem("lang", "ar");
-              handleLanguageChange("ar", ArabicFlag);
-            }}
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "it");
+                handleLanguageChange("it", ItalianFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={ItalianFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>IT</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "en");
+                handleLanguageChange("en", EnglishFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={EnglishFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>EN</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "fr");
+                handleLanguageChange("fr", FrenchFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={FrenchFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>FR</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "de");
+                handleLanguageChange("de", GermanFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={GermanFlag}
+                  alt="german"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>GR</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "es");
+                handleLanguageChange("es", SpanishFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={SpanishFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>ES</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "pr");
+                handleLanguageChange("pr", PortugueseFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={PortugueseFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>PR</h5>
+              </div>
+            </MenuItem>
+
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "ru");
+                handleLanguageChange("ru", RussianFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={RussianFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>RU</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "zh");
+                handleLanguageChange("zh", ChineseFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={ChineseFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>CN</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "ar");
+                handleLanguageChange("ar", ArabicFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={ArabicFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>AR</h5>
+              </div>
+            </MenuItem>
+          </Menu>
+        </div>
+      </nav>
+      {
+        // Tablet
+      }
+
+      {
+        // Mobile
+      }
+      <nav
+        className={`fixed left-0 top-0 z-[9999] flex h-fit w-screen flex-row items-center justify-between px-4 py-6 lg:hidden ${
+          isScrolled
+            ? "rounded-b-lg bg-gradient-to-br from-[#201D26] to-[#1D1B20] shadow-sm shadow-[#5C5667]"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="flex flex-row items-center justify-start gap-10">
+          <Link href={"/index"}>
+            <Image src={logo} width={60} height={65} alt=""></Image>
+          </Link>
+        </div>
+        <div className="flex flex-row items-center justify-end gap-3">
+          <IoMenu color="#F7E16B" size={40} />
+
+          <Menu
+            align={"end"}
+            direction="bottom"
+            arrow={true}
+            menuButton={
+              <MenuButton>
+                <div className=" flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-lg border border-[#F7E16B] px-2 py-2 ">
+                  <Image
+                    src={selectedLanguage.image}
+                    alt={selectedLanguage.name}
+                    height={20}
+                    width={20}
+                    className="m-0 p-0"
+                  />
+                  <h5 className="montreal mr-1 text-lg uppercase text-whiteText-500">
+                    {selectedLanguage.name}
+                  </h5>
+                  <IoChevronDown
+                    color="#FFFFFF"
+                    size={20}
+                    className="m-0 h-fit w-fit p-0"
+                  />
+                </div>
+              </MenuButton>
+            }
+            transition
           >
-            <div className="flex h-fit w-full flex-row items-center justify-start">
-              <Image
-                src={ArabicFlag}
-                alt="English"
-                className="mr-3 aspect-square h-6 w-6"
-              />
-              <h5 className={` my-0 text-xl text-white`}>AR</h5>
-            </div>
-          </MenuItem>
-        </Menu>
-      </div>
-    </nav>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "it");
+                handleLanguageChange("it", ItalianFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={ItalianFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>IT</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "en");
+                handleLanguageChange("en", EnglishFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={EnglishFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>EN</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "fr");
+                handleLanguageChange("fr", FrenchFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={FrenchFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>FR</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "de");
+                handleLanguageChange("de", GermanFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={GermanFlag}
+                  alt="german"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>GR</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "es");
+                handleLanguageChange("es", SpanishFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={SpanishFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>ES</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "pr");
+                handleLanguageChange("pr", PortugueseFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={PortugueseFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>PR</h5>
+              </div>
+            </MenuItem>
+
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "ru");
+                handleLanguageChange("ru", RussianFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={RussianFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>RU</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "zh");
+                handleLanguageChange("zh", ChineseFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={ChineseFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>CN</h5>
+              </div>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                localStorage.setItem("lang", "ar");
+                handleLanguageChange("ar", ArabicFlag);
+              }}
+            >
+              <div className="flex h-fit w-full flex-row items-center justify-start">
+                <Image
+                  src={ArabicFlag}
+                  alt="English"
+                  className="mr-3 aspect-square h-6 w-6"
+                />
+                <h5 className={` my-0 text-xl text-white`}>AR</h5>
+              </div>
+            </MenuItem>
+          </Menu>
+        </div>
+      </nav>
+    </>
   );
 };
 

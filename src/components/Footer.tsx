@@ -12,31 +12,31 @@ const Footer = () => {
   return (
     <footer className="flex h-fit w-full flex-col items-center justify-center bg-[#141315] py-6 ">
       <Link href={"/"}>
-        <Image src={logo} alt="coliseum" className=" scale-[0.6] "></Image>
+        <Image src={logo} alt="coliseum" className=" lg:scale-[0.6]"></Image>
       </Link>
 
-      <div className="my-4 flex flex-row items-center justify-evenly gap-4">
+      <div className="my-8 lg:my-0 flex flex-col lg:flex-row items-center justify-evenly gap-8 lg:gap-4">
         <Link href={"/trade"}>
-          <h5 className="montreal mb-0 text-base text-white">{t("trade")}</h5>
+          <h5 className="montreal mb-0 text-2xl lg:text-base text-white">{t("trade")}</h5>
         </Link>
         <Link href={"/stake"}>
-          <h5 className="montreal mb-0 text-base text-white">{t("stake")}</h5>
+          <h5 className="montreal mb-0 text-2xl lg:text-base text-white">{t("stake")}</h5>
         </Link>
         <Link href={"/about"}>
-          <h5 className="montreal mb-0 text-base text-white">{t("about")}</h5>
+          <h5 className="montreal mb-0 text-2xl lg:text-base text-white">{t("about")}</h5>
         </Link>
         <Link href={""}>
-          <h5 className="montreal mb-0 text-base text-white">
+          <h5 className="montreal mb-0 text-2xl lg:text-base text-white">
             {t('contact')}
           </h5>
         </Link>
         <Link href={""}>
-          <h5 className="montreal mb-0 text-base text-white">
+          <h5 className="montreal mb-0 text-2xl lg:text-base text-white">
             {t('policy')}
           </h5>
         </Link>
         <Link href={""}>
-          <h5 className="montreal mb-0 text-base text-white">
+          <h5 className="montreal mb-0 text-2xl lg:text-base text-white">
             {t('conditions')}
           </h5>
         </Link>

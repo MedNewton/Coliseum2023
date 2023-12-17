@@ -161,3 +161,8 @@ html::-webkit-scrollbar {
     padding-top: .7rem !important;
     padding-bottom: .7rem !important;
   }
+  
+  .carousel .slider-wrapper{
+    width: 95vw !important;
+    height: fit-content !important;
+  }

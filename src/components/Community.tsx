@@ -22,7 +22,7 @@ const CommunitySection = () => {
       <h5 className="montrealMedium text-center text-3xl text-[#F7E16B]">
         {t('communityhead')}
       </h5>
-      <p className="montreal mb-12 mt-6 w-7/12 text-center text-lg text-whiteText-500">
+      <p className="montreal mb-12 mt-6 w-11/12 lg:w-7/12 text-center text-xl lg:text-lg text-whiteText-500">
         {t('communityparagraph')}
       </p>
       <div className="my-6 flex h-fit w-full flex-row items-center justify-center gap-8">
