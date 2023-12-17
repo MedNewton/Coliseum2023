@@ -11,16 +11,22 @@ import aptos from "@assets/images/aptos.png"
 import shiba from '@assets/images/shiba.png'
 import quant from '@assets/images/quant.png'
 import world from '@assets/images/worldCoin.png'
+import { useTranslation } from "react-i18next";
 
 const TrendingProducts = () => {
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section className="flex h-fit w-full flex-col items-center justify-start py-6">
       <div className="mb-4 flex w-8/12 flex-row items-center justify-between gap-3 px-2">
         <h5 className="montrealMedium text-3xl text-[#F7E16B] ">
-          Trending Products
+          {t('trendingproducts')}
         </h5>
         <div className="flex h-fit w-fit flex-row items-center justify-end gap-2">
-          <h5 className="montrealMedium text-lg text-[#F7E16B] ">More</h5>
+          <h5 className="montrealMedium text-lg text-[#F7E16B] ">
+            {t('more')}
+          </h5>
           <GoArrowUpRight size={25} color="#F7E16B" />
         </div>
       </div>

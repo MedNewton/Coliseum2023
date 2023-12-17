@@ -1,14 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { FaRegCircleCheck } from "react-icons/fa6";
 
 const Roadmap = () => {
+  
+  const { t, i18n } = useTranslation();
+
   return (
     <section className="flex h-fit w-full flex-col items-start justify-start px-20 py-16">
-      <h5 className="montrealBold mb-4 text-4xl text-[#F7E16B]">Roadmap</h5>
+      <h5 className="montrealBold mb-4 text-4xl text-[#F7E16B]">
+        {t('roadmap')}
+      </h5>
       <p className="montrealMedium mb-8 w-10/12 text-xl leading-normal text-white">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
-        neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget
-        est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel
-        aliquet fermentum.
+        {t('roadmapparagraph')}
       </p>
       <div className="mx-auto flex h-fit w-9/12 flex-row items-start justify-between gap-10 rounded-xl border border-[#5C5667] bg-[#343238] p-6 mb-6">
         <div className="flex h-fit w-1/5 flex-col items-center justify-start">
@@ -19,7 +22,7 @@ const Roadmap = () => {
         </div>
         <div className="h-fit w-4/5">
           <h5 className="montrealMedium text-3xl text-whiteText-500">
-            Launch First Cmax Converter
+            {t('roadmaptitle1')}
           </h5>
           <p className="montreal my-4 w-10/12 text-base leading-normal text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -63,7 +66,7 @@ const Roadmap = () => {
         </div>
         <div className="h-fit w-4/5">
           <h5 className="montrealMedium text-3xl text-whiteText-500">
-            Launch First Cmax Converter
+          {t('roadmaptitle2')}
           </h5>
           <p className="montreal my-4 w-10/12 text-base leading-normal text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -107,7 +110,7 @@ const Roadmap = () => {
         </div>
         <div className="h-fit w-4/5">
           <h5 className="montrealMedium text-3xl text-whiteText-500">
-            Launch First Cmax Converter
+          {t('roadmaptitle3')}
           </h5>
           <p className="montreal my-4 w-10/12 text-base leading-normal text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -151,7 +154,7 @@ const Roadmap = () => {
         </div>
         <div className="h-fit w-4/5">
           <h5 className="montrealMedium text-3xl text-whiteText-500">
-            Launch First Cmax Converter
+          {t('roadmaptitle4')}
           </h5>
           <p className="montreal my-4 w-10/12 text-base leading-normal text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer

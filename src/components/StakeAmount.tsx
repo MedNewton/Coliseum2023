@@ -4,9 +4,13 @@ import Image from "next/image";
 
 import bg from "@assets/images/shadesBg1.png";
 import { AiOutlineDollar } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 
 const StakeAmount = () => {
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section className="flex h-fit w-full flex-row items-stretch justify-center bg-center bg-cover bg-no-repeat px-14 py-14" style={{
         backgroundImage: `url('${bg.src}')`
@@ -15,7 +19,7 @@ const StakeAmount = () => {
         <div className="flex h-fit w-fit flex-col items-start justify-start">
           <div className="mb-4 flex h-fit w-fit flex-row items-center justify-start">
             <h5 className="montrealMedium mr-3 text-2xl text-whiteText-500">
-              Total Stake Amount
+              {t('totalAmount')}
             </h5>
             <h5 className="montreal rounded-xl bg-[#3E4057] p-2 text-base text-[#F7E16B] ">
               4 APR%
@@ -30,7 +34,7 @@ const StakeAmount = () => {
         <div className="flex h-fit w-fit flex-col items-center justify-start ">
           <div className="mb-4 flex h-fit w-fit flex-row items-center justify-start">
             <h5 className="montrealMedium mr-3 text-2xl text-whiteText-500">
-              Claim Rewards
+              {t('claim')}
             </h5>
             
           </div>

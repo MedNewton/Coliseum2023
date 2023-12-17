@@ -1,14 +1,20 @@
 // Assets :
 
+import { useTranslation } from "react-i18next";
 import { MdCompareArrows } from "react-icons/md";
 
 const BuyCMAX = () => {
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section className="flex h-fit w-full flex-col items-start justify-start px-20 py-16">
-      <h5 className="montrealMedium mb-4 text-4xl text-[#F7E16B]">Buy CMAX</h5>
+      <h5 className="montrealMedium mb-4 text-4xl text-[#F7E16B]">{t('buy')} CMAX</h5>
       <div className="flex h-fit w-full flex-col items-stretch justify-center overflow-hidden rounded-xl border border-[#5C5667] bg-[#343238]">
         <div className="h-fit w-full px-20 py-8">
-          <h5 className="montreal mb-4 text-sm text-[#F7E16B]">You pay</h5>
+          <h5 className="montreal mb-4 text-sm text-[#F7E16B]">
+            {t('pay')}
+          </h5>
           <div className="flex h-fit w-full flex-row items-center justify-between gap-6">
             <div className="h-fit w-1/2">
               <input

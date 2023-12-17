@@ -4,15 +4,21 @@ import Image from "next/image";
 
 import { FaArrowTrendUp } from "react-icons/fa6";
 import greenChart from "@assets/images/greenChart.png";
+import { useTranslation } from "react-i18next";
 
 const StakingStats = () => {
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section className="flex h-fit w-full flex-col items-start justify-start px-20 py-16">
-      <h5 className="montrealMedium mb-4 text-4xl text-[#F7E16B]">Staking Stats</h5>
+      <h5 className="montrealMedium mb-4 text-4xl text-[#F7E16B]">
+        {t('stakingstats')}
+      </h5>
       <div className="flex h-fit w-full flex-row items-stretch justify-center gap-3">
         <div className="flex flex-grow w-1/2 flex-col items-center justify-center overflow-hidden rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <h5 className="montrealMedium mb-8 text-center text-2xl text-whiteText-500">
-            Top Holders
+            {t('topholders')}
           </h5>
           <div className="mb-2 flex h-fit w-full flex-row items-center justify-between">
             <div className="flex h-fit w-fit flex-row items-center justify-start gap-3">
@@ -55,7 +61,7 @@ const StakingStats = () => {
         <div className="flex flex-grow w-1/2 flex-col items-center justify-center overflow-hidden rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <div className="flex h-fit w-full flex-row items-center justify-between">
             <h5 className="montreal whitespace-nowrap text-lg text-white">
-              CMAX PRICE
+              {t('price')}
             </h5>
             <div className="flex h-fit w-fit flex-row items-center justify-start gap-2">
               <FaArrowTrendUp size={22} color="#FFF931" />

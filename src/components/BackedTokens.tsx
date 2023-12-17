@@ -1,17 +1,21 @@
 // Assets :
 import shadesBg from "@assets/images/shadesBg1.png";
+import { useTranslation } from "react-i18next";
 import { FaRegCircleCheck } from "react-icons/fa6";
 
 const BackedTokensSection = () => {
+
+
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section className="flex h-fit w-full flex-col items-center justify-start py-10">
       <h5 className="montrealMedium text-center text-3xl text-[#F7E16B]">
-        Backed Tokens
+        {t('backedhead')}
       </h5>
       <p className="montreal mb-12 mt-6 w-7/12 text-center text-lg text-whiteText-500">
-        Immerse yourself in a dynamic visual tour showcasing the RWFA DApp's
-        transformative capabilities, from secure transactions to decentralized
-        empowerment.
+        {t('backedpara')}
       </p>
       <div className="flex h-fit w-7/12 flex-row items-stretch justify-between gap-2 rounded-xl shadow-sm shadow-[#24222A]">
         <div
@@ -21,24 +25,24 @@ const BackedTokensSection = () => {
           }}
         >
           <h5 className="montrealMedium mb-6 text-2xl text-whiteText-500">
-            Build for decentralization
+            {t('backed1head')}
           </h5>
           <div className="mb-2 flex h-fit w-fit flex-row items-center justify-start gap-2">
             <FaRegCircleCheck size={22} color="#FFE500" />
             <h5 className="montrealMedium text-xl text-whiteText-500">
-              Freely transferable tokens
+              {t('backed1line1')}
             </h5>
           </div>
           <div className="mb-2 flex h-fit w-fit flex-row items-center justify-start gap-2">
             <FaRegCircleCheck size={22} color="#FFE500" />
             <h5 className="montrealMedium text-xl text-whiteText-500">
-              Composable with DeFi protocols
+              {t('backed1line2')}
             </h5>
           </div>
           <div className="mb-2 flex h-fit w-fit flex-row items-center justify-start gap-2">
             <FaRegCircleCheck size={22} color="#FFE500" />
             <h5 className="montrealMedium text-xl text-whiteText-500">
-              Mutlichain support
+              {t('backed1line3')}
             </h5>
           </div>
         </div>
@@ -49,24 +53,24 @@ const BackedTokensSection = () => {
           }}
         >
           <h5 className="montrealMedium mb-6 text-2xl text-whiteText-500">
-          Real value
+          {t('backed2head')}
           </h5>
           <div className="mb-2 flex h-fit w-fit flex-row items-center justify-start gap-2">
             <FaRegCircleCheck size={22} color="#FFE500" />
             <h5 className="montrealMedium text-xl text-whiteText-500">
-            Each token is backed by the underlying assets
+            {t('backed2Line1')}
             </h5>
           </div>
           <div className="mb-2 flex h-fit w-fit flex-row items-center justify-start gap-2">
             <FaRegCircleCheck size={22} color="#FFE500" />
             <h5 className="montrealMedium text-xl text-whiteText-500">
-            3rd-party licensed custodians hold assets
+            {t('backed2Line2')}
             </h5>
           </div>
           <div className="mb-2 flex h-fit w-fit flex-row items-center justify-start gap-2">
             <FaRegCircleCheck size={22} color="#FFE500" />
             <h5 className="montrealMedium text-xl text-whiteText-500">
-            Redeemable for the assets cash value
+            {t('backed2Line3')}
             </h5>
           </div>
         </div>

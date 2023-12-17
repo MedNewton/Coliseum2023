@@ -5,8 +5,12 @@ import Link from "next/link";
 import communityBG from "@assets/images/communityBG.png";
 import { RxNotionLogo, RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { RiTwitterXFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 
 const CommunitySection = () => {
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section
       className="mt-6 flex h-fit w-full flex-col items-center justify-center bg-top bg-no-repeat py-16"
@@ -16,13 +20,10 @@ const CommunitySection = () => {
       }}
     >
       <h5 className="montrealMedium text-center text-3xl text-[#F7E16B]">
-        Join our community
+        {t('communityhead')}
       </h5>
       <p className="montreal mb-12 mt-6 w-7/12 text-center text-lg text-whiteText-500">
-        Dive into a thriving hub of shared knowledge and innovation, uniting
-        with us to shape the future of finance through RWFA DApp. Your
-        participation drives our collective journey toward decentralized
-        excellence.
+        {t('communityparagraph')}
       </p>
       <div className="my-6 flex h-fit w-full flex-row items-center justify-center gap-8">
         <Link href={""}>

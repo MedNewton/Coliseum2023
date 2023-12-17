@@ -6,8 +6,12 @@ import Link from "next/link";
 import { CiLocationOn } from "react-icons/ci";
 import { RxNotionLogo, RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { RiTwitterXFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 
 const ProfileTopSection = () => {
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section className="flex h-fit w-full flex-col items-start justify-start px-20 pt-44 pb-20">
       <div className="flex h-fit w-full flex-row items-stretch justify-between gap-16">
@@ -29,7 +33,9 @@ const ProfileTopSection = () => {
           </div>
         </div>
         <div className="flex h-fit w-4/5 flex-col items-start justify-start gap-2">
-          <h5 className="montrealMedium text-2xl text-whiteText-500">Hi,</h5>
+          <h5 className="montrealMedium text-2xl text-whiteText-500">
+            {t('hi')},
+          </h5>
           <h5 className="montrealBold text-4xl capitalize text-[#F7E16B]">
             Sebastian Mathew
           </h5>
@@ -40,7 +46,7 @@ const ProfileTopSection = () => {
             </h5>
           </div>
           <h5 className="montrealMedium mt-4 text-3xl capitalize text-[#F7E16B]">
-            Networth
+            {t('networth')}
           </h5>
           <h5 className="montrealMedium text-3xl text-whiteText-500">
             $500,000,000.000

@@ -11,17 +11,20 @@ import icon3 from "@assets/images/market3.png";
 import icon4 from "@assets/images/market4.png";
 import icon5 from "@assets/images/market5.png";
 import icon6 from "@assets/images/market6.png";
+import { useTranslation } from "react-i18next";
 
 const MarketsSection = () => {
+
+
+  const { t, i18n } = useTranslation();
+
   return (
     <section className="mt-6 flex h-fit w-full flex-col items-center justify-center py-16 bg-[#151517]">
       <h5 className="montrealMedium text-center text-3xl text-[#F7E16B]">
-        Our Markets
+        {t('marketshead')}
       </h5>
       <p className="montreal mb-12 mt-6 w-7/12 text-center text-lg text-whiteText-500">
-        Explore the expansive reach of the CMAX token across various markets
-        including Uniswap, the Ethereum network, and more. Stay updated with
-        real-time pricing and market information on CoinMarketCap and CoinGecko
+        {t('marketspara')}
       </p>
       <Marquee loop={0} pauseOnHover={true}>
         <Link href={""} target="_blank">

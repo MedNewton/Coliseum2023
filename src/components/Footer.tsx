@@ -26,22 +26,26 @@ const Footer = () => {
           <h5 className="montreal mb-0 text-base text-white">{t("about")}</h5>
         </Link>
         <Link href={""}>
-          <h5 className="montreal mb-0 text-base text-white">Contact Us</h5>
-        </Link>
-        <Link href={""}>
-          <h5 className="montreal mb-0 text-base text-white">Privacy Policy</h5>
+          <h5 className="montreal mb-0 text-base text-white">
+            {t('contact')}
+          </h5>
         </Link>
         <Link href={""}>
           <h5 className="montreal mb-0 text-base text-white">
-            Terms & Conditions
+            {t('policy')}
+          </h5>
+        </Link>
+        <Link href={""}>
+          <h5 className="montreal mb-0 text-base text-white">
+            {t('conditions')}
           </h5>
         </Link>
       </div>
       <h5 className="montreal my-3 text-center text-base text-white opacity-50">
-        Media inquires for CMax - Contact media@cmax.com
+        {t('inquiry')}
       </h5>
       <h5 className="montreal mb-0 text-center text-base text-white opacity-50">
-        Copy Right 2023 - CMax. All Rights Reserved
+        {t('copyright')}
       </h5>
     </footer>
   );

@@ -6,17 +6,19 @@ import shadesBg from "@assets/images/shadesBg1.png";
 import logo from "@assets/images/logo.png";
 import tita from '@assets/images/tita.png'
 import { GoArrowDownRight } from "react-icons/go";
+import { useTranslation } from "react-i18next";
 
 const TreasurySection = () => {
+
+  const { t, i18n } = useTranslation();
+
   return (
     <section className="flex h-fit w-full flex-col items-center justify-start py-10">
       <h5 className="montrealMedium text-center text-3xl text-[#F7E16B]">
-        Treasury & Tokens Ecosystem
+        {t('treasuryhead')}
       </h5>
       <p className="montreal mb-12 mt-6 w-7/12 text-center text-lg text-whiteText-500">
-        Immerse yourself in a dynamic visual tour showcasing the RWFA DApp's
-        transformative capabilities, from secure transactions to decentralized
-        empowerment.
+        {t('treasuryparagraph')}
       </p>
       <div className="flex h-fit w-7/12 flex-row items-stretch justify-between gap-2 rounded-xl bg-[#24222A] p-6 shadow-sm shadow-[#24222A]">
         <div
@@ -25,8 +27,8 @@ const TreasurySection = () => {
             backgroundImage: `url('${shadesBg.src}')`,
           }}
         >
-          <h5 className="montrealMedium text-4xl text-whiteText-500">
-            Treasury
+          <h5 className="montrealMedium capitalize text-4xl text-whiteText-500">
+            {t('treasury')}
           </h5>
           <h5 className="montrealMedium text-4xl text-whiteText-500">
             59.000.000,00 €
@@ -47,7 +49,7 @@ const TreasurySection = () => {
               ></Image>
               <div className="flex h-full w-fit flex-col items-start justify-start gap-3">
                 <h5 className="montrealMedium text-xl text-whiteText-500">
-                  Total Trading Volume
+                  {t('totaltrading')}
                 </h5>
                 <h5 className="montrealMedium text-4xl text-[#F7E16B] ">
                   CMAX
@@ -69,7 +71,7 @@ const TreasurySection = () => {
               ></Image>
               <div className="flex h-full w-fit flex-col items-start justify-start gap-3">
                 <h5 className="montrealMedium text-xl text-whiteText-500">
-                  Total Trading Volume
+                {t('totaltrading')}
                 </h5>
                 <h5 className="montrealMedium text-4xl text-[#F7E16B] ">
                   CMAX

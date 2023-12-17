@@ -8,13 +8,19 @@ import { FaArrowTrendUp, FaArrowTrendDown } from "react-icons/fa6";
 import greenChart from "@assets/images/greenChart.png";
 import redChart from "@assets/images/redChart.png";
 import grayChart from "@assets/images/grayChart.png";
+import { useTranslation } from "react-i18next";
 
 const TIFGrid = () => {
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section className="flex h-fit w-full flex-col items-center justify-start pb-20 pt-44">
       <div className="flex w-8/12 flex-row items-center justify-end gap-3 px-2 mb-4">
         <IoSearchOutline size={30} color="#FFFFFF" />
-        <h5 className="montrealMedium text-lg text-white">Search</h5>
+        <h5 className="montrealMedium text-lg text-white">
+          {t('search')}
+        </h5>
       </div>
       <div className="flex h-fit w-8/12 flex-row items-center justify-center gap-3 mb-3">
         <div className="h-fit w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">

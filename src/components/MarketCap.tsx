@@ -5,8 +5,12 @@ import Link from "next/link";
 import { FaPlus } from "react-icons/fa6";
 import { MdCompareArrows } from "react-icons/md";
 import mktCap from '@assets/images/mktCap.png'
+import { useTranslation } from "react-i18next";
 
 const MarketCap = () => {
+
+  const { t, i18n } = useTranslation();
+  
   return (
     <section className="flex h-fit w-full flex-col items-center justify-center py-10">
       <div className="flex h-fit w-6/12 flex-row items-stretch justify-between">
@@ -15,10 +19,10 @@ const MarketCap = () => {
             USDT STATS
           </h5>
           <h5 className="montrealBold mb-2 text-3xl text-[#F7E16B]">
-            Authentic returns
+            {t('authentic')}
           </h5>
           <h5 className="montrealBold text-3xl text-white">
-          sourced transparently
+          {t('sourced')}
           </h5>
           <div className="my-8 flex h-fit w-fit flex-row items-center justify-between gap-3">
             <button className="aspect-square h-fit rounded-full bg-whiteBackground-500 p-2">
