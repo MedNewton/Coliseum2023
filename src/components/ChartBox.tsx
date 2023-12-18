@@ -23,7 +23,7 @@ const Chartbox = () => {
           </h5>
         </div>
       </div>
-      <div className="flex h-full w-full flex-row items-center justify-center rounded-2xl border border-[#24222A] bg-[#24222A] p-4">
+      <div className="flex h-[50vh] lg:h-full w-full flex-row items-center justify-center rounded-2xl border border-[#24222A] bg-[#24222A] p-4">
         <Image src={bigChart} alt="chart" className=" scale-90"></Image>
       </div>
     </div>

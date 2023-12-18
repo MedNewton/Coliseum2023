@@ -27,6 +27,7 @@ import { LiaWalletSolid } from "react-icons/lia";
 import { IoChevronDown } from "react-icons/io5";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
@@ -346,7 +347,7 @@ const Navbar = () => {
               toggleMobileMenu();
             }}
           >
-            <IoMenu color="#F7E16B" className="h-fit w-fit" size={40} />
+            <HiOutlineMenuAlt3 color="#F7E16B" className="h-fit w-fit" size={40} />
           </div>
 
           <Menu
