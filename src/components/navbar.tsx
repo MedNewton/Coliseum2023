@@ -348,7 +348,7 @@ const Navbar = () => {
               toggleMobileMenu();
             }}
           >
-            <CiMenuFries color="#F7E16B" size={30} />
+            <HiOutlineMenuAlt3 color="#F7E16B" size={30} />
           </div>
 
           <Menu
