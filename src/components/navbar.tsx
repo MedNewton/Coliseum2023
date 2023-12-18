@@ -28,6 +28,7 @@ import { IoChevronDown } from "react-icons/io5";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { CiMenuFries } from 'react-icons/ci'
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
@@ -341,13 +342,13 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row items-center justify-end gap-3">
           <div
-            className="flex h-full w-fit flex-row items-center justify-center"
+            className="flex h-fit w-fit flex-row items-center justify-center"
             onClick={() => {
               console.log(openMobileMenu);
               toggleMobileMenu();
             }}
           >
-            <HiOutlineMenuAlt3 color="#F7E16B" className="h-fit w-fit" size={40} />
+            <CiMenuFries color="#F7E16B" size={30} />
           </div>
 
           <Menu
