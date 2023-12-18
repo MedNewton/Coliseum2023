@@ -340,7 +340,7 @@ const Navbar = () => {
             <Image src={logo} width={60} height={65} alt=""></Image>
           </Link>
         </div>
-        <div className="flex flex-row items-center justify-end gap-3">
+        <div className="w-fit h-fit flex flex-row items-center justify-end gap-3">
           <div
             className="flex h-fit w-fit flex-row items-center justify-center"
             onClick={() => {
