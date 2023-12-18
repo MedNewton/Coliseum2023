@@ -20,11 +20,11 @@ const TIFGrid = () => {
         <h5 className="montrealMedium text-lg text-white">{t("search")}</h5>
       </div>
       <div className="mb-3 flex h-fit w-11/12 flex-col items-center justify-center gap-3 lg:w-8/12 lg:flex-row">
-        <Link href={"/swap"}>
+        <Link href={"/swap"} className="w-full">
           <div className="h-fit w-full rounded-xl border border-[#34313C] bg-[#24222A] p-6 lg:w-1/3">
             <div className="flex h-fit w-full flex-row items-center justify-between">
               <h5 className="montreal whitespace-nowrap text-lg text-white">
-                Tita ETF
+                Tita EdfTF
               </h5>
               <div className="flex h-fit w-fit flex-row items-center justify-start gap-2">
                 <FaArrowTrendUp size={22} color="#FFF931" />
@@ -37,7 +37,7 @@ const TIFGrid = () => {
             </div>
           </div>
         </Link>
-        <Link href={"/swap"}>
+        <Link href={"/swap"} className="w-full">
           <div className="h-fit w-full rounded-xl border border-[#34313C] bg-[#24222A] p-6 lg:w-1/3">
             <div className="flex h-fit w-full flex-row items-center justify-between">
               <h5 className="montreal whitespace-nowrap text-lg text-white">
@@ -54,7 +54,7 @@ const TIFGrid = () => {
             </div>
           </div>
         </Link>
-        <Link href={"/swap"}>
+        <Link href={"/swap"} className="w-full">
           <div className="h-fit w-full rounded-xl border border-[#34313C] bg-[#24222A] p-6 lg:w-1/3">
             <div className="flex h-fit w-full flex-row items-center justify-between">
               <h5 className="montreal whitespace-nowrap text-lg text-white">
