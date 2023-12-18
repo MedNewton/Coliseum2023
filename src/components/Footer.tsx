@@ -36,6 +36,11 @@ const Footer = () => {
             {t("about")}
           </h5>
         </Link>
+        <Link href={"/profile"}>
+          <h5 className="montreal mb-0 text-2xl text-white lg:text-base">
+            {t("profile")}
+          </h5>
+        </Link>
       </div>
       
       <h5 className="montreal my-6 text-center text-base text-white opacity-50">

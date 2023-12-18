@@ -9,15 +9,14 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 
 const ProfileTopSection = () => {
-
   const { t, i18n } = useTranslation();
-  
+
   return (
-    <section className="flex h-fit w-full flex-col items-start justify-start px-20 pt-44 pb-20">
-      <div className="flex h-fit w-full flex-row items-stretch justify-between gap-16">
+    <section className="flex h-fit w-full flex-col items-start justify-start px-4 pb-20 pt-44 lg:px-20">
+      <div className="hidden h-fit w-full flex-row items-stretch justify-between gap-16 lg:flex">
         <div className="flex w-2/5 flex-grow flex-col items-end justify-center">
           <div className="aspect-square h-4/5 rounded-full border-4 border-[#F7E16B] bg-slate-400 shadow-sm shadow-[#F7E16B]"></div>
-          <div className="flex h-fit w-fit flex-row items-center justify-center gap-4 mt-6">
+          <div className="mt-6 flex h-fit w-fit flex-row items-center justify-center gap-4">
             <Link href={""}>
               <RxNotionLogo color="#FFFFFF" size={25} />
             </Link>
@@ -34,7 +33,7 @@ const ProfileTopSection = () => {
         </div>
         <div className="flex h-fit w-4/5 flex-col items-start justify-start gap-2">
           <h5 className="montrealMedium text-2xl text-whiteText-500">
-            {t('hi')},
+            {t("hi")},
           </h5>
           <h5 className="montrealBold text-4xl capitalize text-[#F7E16B]">
             Sebastian Mathew
@@ -46,7 +45,26 @@ const ProfileTopSection = () => {
             </h5>
           </div>
           <h5 className="montrealMedium mt-4 text-3xl capitalize text-[#F7E16B]">
-            {t('networth')}
+            {t("networth")}
+          </h5>
+          <h5 className="montrealMedium text-3xl text-whiteText-500">
+            $500,000,000.000
+          </h5>
+        </div>
+      </div>
+      <div className="flex h-fit w-full flex-col items-center justify-start lg:hidden">
+        <div className="aspect-square w-3/5 relative z-50 rounded-full border-4 border-[#F7E16B] bg-slate-400 shadow-sm shadow-[#F7E16B]"></div>
+        <div className="flex h-fit w-full -mt-8 relative z-10 flex-col items-center justify-start gap-6 py-14 px-2 bg-[#343238] border border-[#5C5667] rounded-2xl ">
+          <h5 className="montrealBold text-4xl capitalize text-[#F7E16B]">
+            Sebastian Mathew
+          </h5>
+          <div className="flex h-fit w-fit flex-row items-center justify-center">
+            <h5 className="montrealMedium text-center w-10/12 text-xl text-whiteText-500">
+              1234 NW Bobcat Lane, St. Robert, MO 65584-5678.
+            </h5>
+          </div>
+          <h5 className="montrealMedium w-fit h-fit px-6 py-1 rounded-full mt-4 text-3xl capitalize text-black bg-[#F7E16B] ">
+            {t("networth")}
           </h5>
           <h5 className="montrealMedium text-3xl text-whiteText-500">
             $500,000,000.000
