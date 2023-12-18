@@ -14,12 +14,12 @@ const BackedTokensSection = () => {
       <h5 className="montrealMedium text-center text-3xl text-[#F7E16B]">
         {t('backedhead')}
       </h5>
-      <p className="montreal mb-12 mt-6 w-7/12 text-center text-lg text-whiteText-500">
+      <p className="montreal mb-12 mt-6 w-11/12 lg:w-7/12 text-center text-xl lg:text-lg text-whiteText-500">
         {t('backedpara')}
       </p>
-      <div className="flex h-fit w-7/12 flex-row items-stretch justify-between gap-2 rounded-xl shadow-sm shadow-[#24222A]">
+      <div className="flex h-fit w-11/12 lg:w-7/12 flex-col lg:flex-row items-stretch justify-between gap-2 rounded-xl shadow-sm shadow-[#24222A]">
         <div
-          className="flex h-fit w-1/2 flex-col flex-grow items-start justify-center gap-1 rounded-xl bg-cover bg-center bg-no-repeat px-3 py-12"
+          className="flex h-fit w-full lg:w-1/2 flex-col flex-grow items-start justify-center gap-1 rounded-xl bg-cover bg-center bg-no-repeat px-3 py-12"
           style={{
             backgroundImage: `url('${shadesBg.src}')`,
           }}
@@ -47,7 +47,7 @@ const BackedTokensSection = () => {
           </div>
         </div>
         <div
-          className="flex h-fit w-1/2 flex-col items-start justify-center gap-1 rounded-xl bg-cover bg-center bg-no-repeat px-3 py-12 flex-grow"
+          className="flex h-fit w-full lg:w-1/2 flex-col items-start justify-center gap-1 rounded-xl bg-cover bg-center bg-no-repeat px-3 py-12 flex-grow"
           style={{
             backgroundImage: `url('${shadesBg.src}')`,
           }}

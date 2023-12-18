@@ -9,6 +9,7 @@ import "@szhsin/react-menu/dist/transitions/slide.css";
 import { ConnectWallet } from "@thirdweb-dev/react";
 import { useAddress } from "@thirdweb-dev/react";
 import { darkTheme, lightTheme } from "@thirdweb-dev/react";
+import { slide as MobileMenu } from "react-burger-menu";
 
 // Assets :
 import logo from "@assets/images/logo.png";
@@ -26,9 +27,11 @@ import { LiaWalletSolid } from "react-icons/lia";
 import { IoChevronDown } from "react-icons/io5";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -332,8 +335,77 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex flex-row items-center justify-end gap-3">
-          <IoMenu color="#F7E16B" size={40} />
-
+          <IoMenu
+            color="#F7E16B"
+            className="cursor-pointer"
+            size={40}
+            onClick={() => {
+              setOpenMobileMenu(true);
+            }}
+          />
+          <MobileMenu isOpen={openMobileMenu} className="">
+            <div className="h-full w-full">
+              <div className="flex h-fit w-full flex-row items-center justify-end px-4 py-6">
+                <IoMdClose size={35} color="#FFE500" />
+              </div>
+              <div className="flex h-full w-full flex-col items-center justify-start gap-20 pt-20">
+                <div className="flex h-fit w-fit flex-col items-center justify-center gap-12">
+                  <Link href={"/"}>
+                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                      {t("home")}
+                    </h5>
+                  </Link>
+                  <div className="menuSep h-[1px] w-[90vw] "></div>
+                  <Link
+                    href={"/trade"}
+                    onClick={() => {
+                      setOpenMobileMenu(false);
+                    }}
+                  >
+                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                      {t("trade")}
+                    </h5>
+                  </Link>
+                  <div className="menuSep h-[1px] w-[90vw] "></div>
+                  <Link
+                    href={"/stake"}
+                    onClick={() => {
+                      setOpenMobileMenu(false);
+                    }}
+                  >
+                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                      {t("stake")}
+                    </h5>
+                  </Link>
+                  <div className="montrealMedium h-[1px] w-[90vw] "></div>
+                  <Link
+                    href={"/about"}
+                    onClick={() => {
+                      setOpenMobileMenu(false);
+                    }}
+                  >
+                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                      {t("about")}
+                    </h5>
+                  </Link>
+                  <div className="menuSep h-[1px] w-[90vw] "></div>
+                  <Link
+                    href={"/profile"}
+                    onClick={() => {
+                      setOpenMobileMenu(false);
+                    }}
+                  >
+                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                      {t("profile")}
+                    </h5>
+                  </Link>
+                </div>
+                <div className="">
+                  <ConnectWallet />
+                </div>
+              </div>
+            </div>
+          </MobileMenu>
           <Menu
             align={"end"}
             direction="bottom"

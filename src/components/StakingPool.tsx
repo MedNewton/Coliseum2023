@@ -10,7 +10,7 @@ const StakingPool = () => {
   const { t, i18n } = useTranslation();
   
   return (
-    <section className="flex h-fit w-full flex-col items-start justify-start px-20 py-16">
+    <section className="flex h-fit w-full flex-col items-start justify-start px-4 lg:px-20 pb-16 lg:py-16">
       <h5 className="montrealMedium mb-4 text-4xl text-[#F7E16B]">
         {t('stakingpool')}
       </h5>
@@ -26,7 +26,7 @@ const StakingPool = () => {
                 <p className="text-lg montrealMedium text-whiteText-500">Unstake</p>
             </div>
         </div>
-        <Image src={bigChart} alt="chart" className=" scale-75"></Image>
+        <Image src={bigChart} alt="chart" className=" scale-90 mt-4 lg:mt-0 lg:scale-75"></Image>
       </div>
     </section>
   );

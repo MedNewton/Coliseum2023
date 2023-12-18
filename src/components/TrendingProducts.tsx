@@ -19,7 +19,7 @@ const TrendingProducts = () => {
   
   return (
     <section className="flex h-fit w-full flex-col items-center justify-start py-6">
-      <div className="mb-4 flex w-8/12 flex-row items-center justify-between gap-3 px-2">
+      <div className="mb-4 flex w-11/12 lg:w-8/12 flex-row items-center justify-between gap-3 px-2">
         <h5 className="montrealMedium text-3xl text-[#F7E16B] ">
           {t('trendingproducts')}
         </h5>
@@ -30,8 +30,8 @@ const TrendingProducts = () => {
           <GoArrowUpRight size={25} color="#F7E16B" />
         </div>
       </div>
-      <div className="flex h-fit w-8/12 flex-row items-center justify-between gap-3 mb-3">
-        <div className="flex h-fit w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
+      <div className="flex h-fit w-full lg:w-8/12 flex-col lg:flex-row items-center justify-between gap-3 mb-3">
+        <div className="flex h-fit w-10/12 lg:w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
           <div className="flex h-fit w-fit flex-row items-center justify-center gap-3">
             <h5 className="montrealMedium text-2xl text-white">1</h5>
             <Image src={tita} alt="tita" width={35} height={35}></Image>
@@ -42,7 +42,7 @@ const TrendingProducts = () => {
             <h5 className="montrealMedium text-xl text-[#0CE770ED]">1.2%</h5>
           </div>
         </div>
-        <div className="flex h-fit w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
+        <div className="flex h-fit w-10/12 lg:w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
           <div className="flex h-fit w-fit flex-row items-center justify-center gap-3">
             <h5 className="montrealMedium text-2xl text-white">2</h5>
             <Image src={pepe} alt="tita" width={35} height={35}></Image>
@@ -54,8 +54,8 @@ const TrendingProducts = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-fit w-8/12 flex-row items-center justify-between gap-3 mb-3">
-        <div className="flex h-fit w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
+      <div className="flex h-fit w-full lg:w-8/12 flex-col lg:flex-row items-center justify-between gap-3 mb-3">
+        <div className="flex h-fit w-10/12 lg:w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
           <div className="flex h-fit w-fit flex-row items-center justify-center gap-3">
             <h5 className="montrealMedium text-2xl text-white">3</h5>
             <Image src={aptos} alt="tita" width={35} height={35}></Image>
@@ -66,7 +66,7 @@ const TrendingProducts = () => {
             <h5 className="montrealMedium text-xl text-[#0CE770ED]">1.2%</h5>
           </div>
         </div>
-        <div className="flex h-fit w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
+        <div className="flex h-fit w-10/12 lg:w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
           <div className="flex h-fit w-fit flex-row items-center justify-center gap-3">
             <h5 className="montrealMedium text-2xl text-white">4</h5>
             <Image src={shiba} alt="tita" width={35} height={35}></Image>
@@ -78,8 +78,8 @@ const TrendingProducts = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-fit w-8/12 flex-row items-center justify-between gap-3 mb-3">
-        <div className="flex h-fit w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
+      <div className="flex h-fit w-full lg:w-8/12 flex-col lg:flex-row items-center justify-between gap-3 mb-3">
+        <div className="flex h-fit w-10/12 lg:w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
           <div className="flex h-fit w-fit flex-row items-center justify-center gap-3">
             <h5 className="montrealMedium text-2xl text-white">5</h5>
             <Image src={quant} alt="tita" width={35} height={35}></Image>
@@ -90,7 +90,7 @@ const TrendingProducts = () => {
             <h5 className="montrealMedium text-xl text-[#0CE770ED]">1.2%</h5>
           </div>
         </div>
-        <div className="flex h-fit w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
+        <div className="flex h-fit w-10/12 lg:w-1/2 flex-row items-center justify-between rounded-xl border border-[#34313C] bg-[#24222A] px-3 py-2">
           <div className="flex h-fit w-fit flex-row items-center justify-center gap-3">
             <h5 className="montrealMedium text-2xl text-white">6</h5>
             <Image src={world} alt="tita" width={35} height={35}></Image>

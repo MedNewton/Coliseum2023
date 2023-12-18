@@ -16,14 +16,14 @@ const TIFGrid = () => {
   
   return (
     <section className="flex h-fit w-full flex-col items-center justify-start pb-20 pt-44">
-      <div className="flex w-8/12 flex-row items-center justify-end gap-3 px-2 mb-4">
+      <div className="flex w-11/12 lg:w-8/12 flex-row items-center justify-end gap-3 px-2 mb-4">
         <IoSearchOutline size={30} color="#FFFFFF" />
         <h5 className="montrealMedium text-lg text-white">
           {t('search')}
         </h5>
       </div>
-      <div className="flex h-fit w-8/12 flex-row items-center justify-center gap-3 mb-3">
-        <div className="h-fit w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
+      <div className="flex h-fit w-11/12 lg:w-8/12 flex-col lg:flex-row items-center justify-center gap-3 mb-3">
+        <div className="h-fit w-full lg:w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <div className="flex h-fit w-full flex-row items-center justify-between">
             <h5 className="montreal whitespace-nowrap text-lg text-white">
               Tita ETF
@@ -38,7 +38,7 @@ const TIFGrid = () => {
             <Image src={greenChart} alt="chart"></Image>
           </div>
         </div>
-        <div className="h-fit w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
+        <div className="h-fit w-full lg:w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <div className="flex h-fit w-full flex-row items-center justify-between">
             <h5 className="montreal whitespace-nowrap text-lg text-white">
               Tusa ETF
@@ -53,7 +53,7 @@ const TIFGrid = () => {
             <Image src={redChart} alt="chart"></Image>
           </div>
         </div>
-        <div className="h-fit w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
+        <div className="h-fit w-full lg:w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <div className="flex h-fit w-full flex-row items-center justify-between">
             <h5 className="montreal whitespace-nowrap text-lg text-white">
               TGerm ETF
@@ -69,8 +69,8 @@ const TIFGrid = () => {
           </div>
         </div>
       </div>
-      <div className="mb-3 flex h-fit w-8/12 flex-row items-center justify-center gap-3">
-        <div className="h-fit w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
+      <div className="mb-3 flex h-fit w-11/12 lg:w-8/12 flex-col lg:flex-row items-center justify-center gap-3">
+        <div className="h-fit w-full lg:w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <div className="flex h-fit w-full flex-row items-center justify-between">
             <h5 className="montreal whitespace-nowrap text-lg text-white">
               Coming Soon
@@ -80,7 +80,7 @@ const TIFGrid = () => {
             <Image src={grayChart} alt="chart"></Image>
           </div>
         </div>
-        <div className="h-fit w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
+        <div className="h-fit w-full lg:w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <div className="flex h-fit w-full flex-row items-center justify-between">
             <h5 className="montreal whitespace-nowrap text-lg text-white">
               Coming Soon
@@ -90,7 +90,7 @@ const TIFGrid = () => {
             <Image src={grayChart} alt="chart"></Image>
           </div>
         </div>
-        <div className="h-fit w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
+        <div className="h-fit w-full lg:w-1/3 rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <div className="flex h-fit w-full flex-row items-center justify-between">
             <h5 className="montreal whitespace-nowrap text-lg text-white">
               Coming Soon

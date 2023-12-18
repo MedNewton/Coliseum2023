@@ -13,8 +13,8 @@ const MarketCap = () => {
   
   return (
     <section className="flex h-fit w-full flex-col items-center justify-center py-10">
-      <div className="flex h-fit w-6/12 flex-row items-stretch justify-between">
-        <div className="flex  w-1/2 flex-grow flex-col items-start justify-center">
+      <div className="flex h-fit w-11/12 lg:w-6/12 flex-col lg:flex-row items-center lg:items-stretch justify-between">
+        <div className="flex w-full lg:w-1/2 flex-grow flex-col items-center lg:items-start justify-center">
           <h5 className="montreal mb-4 text-sm text-white opacity-50">
             USDT STATS
           </h5>
@@ -33,7 +33,7 @@ const MarketCap = () => {
             </button>
           </div>
         </div>
-        <div className="w-1/2 h-fit flex flex-row items-center justify-center flex-grow">
+        <div className="w-10/12 lg:w-1/2 h-fit flex flex-row items-center justify-center flex-grow mt-6 lg:mt-0">
             <Image src={mktCap} alt="market cap" ></Image>
         </div>
       </div>

@@ -4,165 +4,193 @@
 
 
 @font-face {
-    font-family: monument;
-    src: url("../assets/fonts/MonumentExtended-Regular.otf");
+  font-family: monument;
+  src: url("../assets/fonts/MonumentExtended-Regular.otf");
 }
 
 @font-face {
-    font-family: monumentBold;
-    src: url("../assets/fonts/MonumentExtended-Ultrabold.otf");
+  font-family: monumentBold;
+  src: url("../assets/fonts/MonumentExtended-Ultrabold.otf");
 }
 
 @font-face {
-    font-family: montrealLight;
-    src: url("../assets/fonts/NeueMontreal-Light.otf");
+  font-family: montrealLight;
+  src: url("../assets/fonts/NeueMontreal-Light.otf");
 }
 
 @font-face {
-    font-family: montreal;
-    src: url("../assets/fonts/NeueMontreal-Regular.otf");
+  font-family: montreal;
+  src: url("../assets/fonts/NeueMontreal-Regular.otf");
 }
 
 
 @font-face {
-    font-family: montrealMedium;
-    src: url("../assets/fonts/NeueMontreal-Medium.otf");
+  font-family: montrealMedium;
+  src: url("../assets/fonts/NeueMontreal-Medium.otf");
 }
 
 @font-face {
-    font-family: montrealBold;
-    src: url("../assets/fonts/NeueMontreal-Bold.otf");
+  font-family: montrealBold;
+  src: url("../assets/fonts/NeueMontreal-Bold.otf");
 }
 
 
-.monuemnt{
-    font-family: 'monument';
+.monuemnt {
+  font-family: 'monument';
 }
 
-.monuemntBold{
-    font-family: 'monumentBold';
+.monuemntBold {
+  font-family: 'monumentBold';
 }
 
-.montrealLight{
-    font-family: 'montrealLight';
+.montrealLight {
+  font-family: 'montrealLight';
 }
 
-.montreal{
-    font-family: 'montreal';
+.montreal {
+  font-family: 'montreal';
 }
 
-.montrealMedium{
-    font-family: 'montrealMedium';
+.montrealMedium {
+  font-family: 'montrealMedium';
 }
 
-.montrealBold{
-    font-family: 'montrealBold';
+.montrealBold {
+  font-family: 'montrealBold';
 }
 
-html, body{
-    overflow-x: hidden !important;
+html,
+body {
+  overflow-x: hidden !important;
 }
 
 /* width */
 html::-webkit-scrollbar {
-    width: 4px;
-  }
-  
-  /* Track */
-  html::-webkit-scrollbar-track {
-    background: #201D26;
-  }
-  
-  /* Handle */
-  html::-webkit-scrollbar-thumb {
-    background: #F7E16B;
-    border-radius: 10px !important;
-    cursor: pointer !important;
-  }
-  
-  /* Handle on hover */
-  html::-webkit-scrollbar-thumb:hover {
-    background: #f6ecb4;
-  }
+  width: 4px;
+}
 
-.tw-connect-wallet{
-    background-color: transparent !important;
-    font-family: 'montrealMedium' !important;
-    text-transform: uppercase !important;
+/* Track */
+html::-webkit-scrollbar-track {
+  background: #201D26;
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background: #F7E16B;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: #f6ecb4;
+}
+
+.tw-connect-wallet {
+  background-color: transparent !important;
+  font-family: 'montrealMedium' !important;
+  text-transform: uppercase !important;
 }
 
 .szh-menu {
-    background: #242222 !important;
-    margin-top: 6px !important;
-    border: 1px solid yellow !important;
-    border-radius: 10px !important;
-  }
-  
-  .szh-menu__arrow {
-    background: #242222 !important;
-    border-top: 1px solid yellow !important;
-    border-left: 1px solid yellow !important;
-  }
-  
-  .szh-menu__item {
-    width: 100% !important;
-    height: fit-content !important;
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 2% 8% !important;
-    margin-bottom: 2%;
+  background: #242222 !important;
+  margin-top: 6px !important;
+  border: 1px solid yellow !important;
+  border-radius: 10px !important;
+}
+
+.szh-menu__arrow {
+  background: #242222 !important;
+  border-top: 1px solid yellow !important;
+  border-left: 1px solid yellow !important;
+}
+
+.szh-menu__item {
+  width: 100% !important;
+  height: fit-content !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 2% 8% !important;
+  margin-bottom: 2%;
+}
+
+.szh-menu__item:hover {
+  background: #343131 !important;
+}
+
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+  {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
-  .szh-menu__item:hover{
-    background: #343131 !important;
+  to {
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
-  
-  @-webkit-keyframes rotating /* Safari and Chrome */ {
-    from {
-      -webkit-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(-360deg);
-      -o-transform: rotate(-360deg);
-      transform: rotate(-360deg);
-    }
-  }
-  @keyframes rotating {
-    from {
-      -ms-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -ms-transform: rotate(-360deg);
-      -moz-transform: rotate(-360deg);
-      -webkit-transform: rotate(-360deg);
-      -o-transform: rotate(-360deg);
-      transform: rotate(-360deg);
-    }
-  }
-  .rotating {
-    -webkit-animation: rotating 20s linear infinite;
-    -moz-animation: rotating 20s linear infinite;
-    -ms-animation: rotating 20s linear infinite;
-    -o-animation: rotating 20s linear infinite;
-    animation: rotating 20s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
-  .tw-connected-wallet{
-    font-family: 'montrealMedium' !important;
-    background-color:  #343238 !important;
-    padding-top: .7rem !important;
-    padding-bottom: .7rem !important;
+  to {
+    -ms-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
+}
+
+.rotating {
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
+}
+
+.tw-connected-wallet {
+  font-family: 'montrealMedium' !important;
+  background-color: #343238 !important;
+  padding-top: .7rem !important;
+  padding-bottom: .7rem !important;
+}
+
+.carousel .slider-wrapper {
+  width: 95vw !important;
+  height: fit-content !important;
+}
+
+.bm-overlay {
   
-  .carousel .slider-wrapper{
-    width: 95vw !important;
-    height: fit-content !important;
-  }
+
+  top: 0px !important;
+  left: 0px !important;
+}
+
+.bm-menu-wrap {
+  opacity: 0.98;
+  background: linear-gradient(180deg, #201D26 0%, #1D1B20 100%);
+  top: 0px !important;
+  left: 0px !important;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.menuSep{
+  background: linear-gradient(90deg, rgba(163, 107, 255, 0.00) 0%, #FFE500 50.84%, rgba(163, 110, 253, 0.00) 102.76%) !important;
+}

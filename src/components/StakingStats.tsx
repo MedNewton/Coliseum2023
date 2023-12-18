@@ -11,12 +11,12 @@ const StakingStats = () => {
   const { t, i18n } = useTranslation();
   
   return (
-    <section className="flex h-fit w-full flex-col items-start justify-start px-20 py-16">
+    <section className="flex h-fit w-full flex-col items-start justify-start px-4 lg:px-20 py-16">
       <h5 className="montrealMedium mb-4 text-4xl text-[#F7E16B]">
         {t('stakingstats')}
       </h5>
-      <div className="flex h-fit w-full flex-row items-stretch justify-center gap-3">
-        <div className="flex flex-grow w-1/2 flex-col items-center justify-center overflow-hidden rounded-xl border border-[#34313C] bg-[#24222A] p-6">
+      <div className="flex h-fit w-full flex-col lg:flex-row items-stretch justify-center gap-3">
+        <div className="flex flex-grow w-full lg:w-1/2 flex-col items-center justify-center overflow-hidden rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <h5 className="montrealMedium mb-8 text-center text-2xl text-whiteText-500">
             {t('topholders')}
           </h5>
@@ -58,7 +58,7 @@ const StakingStats = () => {
           </div>
         </div>
 
-        <div className="flex flex-grow w-1/2 flex-col items-center justify-center overflow-hidden rounded-xl border border-[#34313C] bg-[#24222A] p-6">
+        <div className="flex flex-grow w-full lg:w-1/2 flex-col items-center justify-center overflow-hidden rounded-xl border border-[#34313C] bg-[#24222A] p-6">
           <div className="flex h-fit w-full flex-row items-center justify-between">
             <h5 className="montreal whitespace-nowrap text-lg text-white">
               {t('price')}
