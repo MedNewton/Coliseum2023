@@ -6,7 +6,7 @@ import bigChart from "@assets/images/bigChart.png";
 
 const Chartbox = () => {
   return (
-    <div className="flex flex-col items-center justify-start flex-grow w-full">
+    <div className="flex h-full flex-col items-center justify-start flex-grow w-full">
       <div className="flex h-fit w-full flex-row items-center justify-between mb-2">
         <h5 className="montrealMedium text-xl text-[#F7E16B] ">Tita ETF</h5>
         <div className="flex h-fit w-fit flex-row items-center justify-start gap-1">
@@ -23,7 +23,7 @@ const Chartbox = () => {
           </h5>
         </div>
       </div>
-      <div className="flex w-full flex-row items-center justify-center rounded-2xl border border-[#24222A] bg-[#24222A] p-4">
+      <div className="flex h-full w-full flex-row items-center justify-center rounded-2xl border border-[#24222A] bg-[#24222A] p-4">
         <Image src={bigChart} alt="chart" className=" scale-90"></Image>
       </div>
     </div>
