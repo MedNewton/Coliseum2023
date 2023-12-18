@@ -348,7 +348,7 @@ const Navbar = () => {
               toggleMobileMenu();
             }}
           >
-            <HiOutlineMenuAlt3 color="#F7E16B" size={30} />
+            <IoMenu color="#F7E16B" size={30} />
           </div>
 
           <Menu
