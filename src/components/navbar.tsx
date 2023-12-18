@@ -354,22 +354,14 @@ const Navbar = () => {
             direction="bottom"
             arrow={true}
             menuButton={
-              <MenuButton>
-                <div className=" flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-lg border border-[#F7E16B] px-2 py-2 ">
+              <MenuButton className="h-fit w-fit">
+                <div className="h-10 w-10 rounded-full border border-yellow-300 p-[1px] ">
                   <Image
                     src={selectedLanguage.image}
                     alt={selectedLanguage.name}
-                    height={20}
-                    width={20}
+                    height={40}
+                    width={40}
                     className="m-0 p-0"
-                  />
-                  <h5 className="montreal mr-1 text-lg uppercase text-whiteText-500">
-                    {selectedLanguage.name}
-                  </h5>
-                  <IoChevronDown
-                    color="#FFFFFF"
-                    size={20}
-                    className="m-0 h-fit w-fit p-0"
                   />
                 </div>
               </MenuButton>
