@@ -13,7 +13,7 @@ const Chartbox = () => {
           <h5 className="montrealMedium rounded-lg bg-[#3E4057] px-2 py-1 text-base text-whiteText-500 ">
             128.68
           </h5>
-          <div className="flex h-fit w-fit flex-row items-center justify-start rounded-lg bg-[#3E4057] px-2 py-1">
+          <div className="hidden lg:flex h-fit w-fit flex-row items-center justify-start rounded-lg bg-[#3E4057] px-2 py-1">
             <h5 className="montrealMedium text-base text-whiteText-500">
               +1,03 | +0,83%
             </h5>
