@@ -119,5 +119,7 @@
     "audit": "Prüfung",
     "networth": "Networthit",
     "holding": "Halten",
-    "cmax": "100 CMAX"
+    "cmax": "100 CMAX",
+    "balance" : "Gleichgewicht",
+    "receive" : "Du erhältst"
   }

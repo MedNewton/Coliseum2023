@@ -118,5 +118,7 @@
     "accountStats" : "تفاصيل حسابك",
     "spendings" : "محموع المدفوعات",
     "totalbenefit" : "مجموع الأرباح",
-    "totalassetvalue" : "إجمالي قيمة الأصول"
+    "totalassetvalue" : "إجمالي قيمة الأصول",
+    "balance" : "الرصيد",
+    "receive" : "تحصل على"
 }

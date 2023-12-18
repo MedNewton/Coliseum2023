@@ -115,5 +115,8 @@
     "accountStats" : "your account stats",
     "spendings" : "total spendings",
     "totalbenefit" : "total benefits",
-    "totalassetvalue" : "total assets value"
+    "totalassetvalue" : "total assets value",
+    "balance" : "Balance",
+    "receive" : "You Receive"
+    
   }

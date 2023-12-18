@@ -73,7 +73,8 @@
     "networth": "净值",
     "holding": "保持",
     "cmax": "100 CMAX",
-
+    "balance" : "平衡",
+    "receive" : "你收到",
     "roadmaptitle1": "推出首款 Cmax 转换器",
     "roadmaptitle2": "介绍蒂塔ETF",
     "roadmaptitle3": "金库和代币生态系统",
