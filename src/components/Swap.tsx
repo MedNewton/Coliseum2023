@@ -83,29 +83,47 @@ const Swap = () => {
   return (
     <div className="flex h-full w-full flex-grow flex-col items-center justify-start overflow-hidden rounded-2xl border border-[#24222A] bg-[#24222A] p-4">
       <div className="flex h-fit w-full flex-row items-center justify-around rounded-2xl border border-[#5C5667] bg-[#343238] p-2">
-        <button
-          className={`montrealMedium flex h-fit w-1/2 flex-row items-center justify-center p-2 ${
-            action1 == "swap"
-              ? " rounded-xl bg-[#F7E16B] text-black "
-              : " text-white"
-          }`}
-          onClick={()=>{toggleAction1()}}
+        <div
+          className="flex h-fit w-1/2 relative z-50 cursor-pointer flex-row items-center justify-center"
+          onClick={() => {
+            setAction1("swap");
+          }}
         >
-          Swap
-        </button>
-        <button
-          className={`montrealMedium flex h-fit w-1/2 flex-row items-center justify-center p-2 ${
-            action1 == "mintBurn"
-              ? " rounded-xl bg-[#F7E16B] text-black"
-              : " text-white"
-          }`}
-          onClick={()=>{toggleAction1()}}
+          <button
+            className={`montrealMedium flex h-fit w-full flex-row items-center justify-center py-2 ${
+              action1 == "swap"
+                ? " rounded-xl bg-[#F7E16B] text-black "
+                : " text-white"
+            }`}
+            onClick={() => {
+              setAction1("swap");
+            }}
+          >
+            Swap
+          </button>
+        </div>
+        <div
+          className="flex h-fit w-1/2 relative z-50 cursor-pointer flex-row items-center justify-center"
+          onClick={() => {
+            setAction1("mintBurn");
+          }}
         >
-          Mint / Burn
-        </button>
+          <button
+            className={`montrealMedium flex h-fit w-full flex-row items-center justify-center py-2 ${
+              action1 == "mintBurn"
+                ? " rounded-xl bg-[#F7E16B] text-black"
+                : " text-white"
+            }`}
+            onClick={() => {
+              setAction1("mintBurn");
+            }}
+          >
+            Mint / Burn
+          </button>
+        </div>
       </div>
       {action1 == "swap" ? (
-        <div className="h-fit w-full px-4 py-6">
+        <div className="h-fit w-full py-6 lg:px-4">
           <div className="h-fit w-full rounded-xl border border-[#5C5667] bg-[#343238] p-4">
             <div className="flex h-fit w-full flex-row items-center justify-between">
               <h5 className="montreal text-sm text-white">{t("pay")}</h5>
@@ -187,12 +205,33 @@ const Swap = () => {
           </div>
         </div>
       ) : (
-        <div className="h-fit w-full px-4 py-6">
+        <div className="h-fit w-full py-6 lg:px-4">
           <div className="h-fit w-full rounded-xl border border-[#5C5667] bg-[#343238] px-4 pb-4 pt-1">
-            <div className="w-full h-fit flex flex-row items-center justify-around px-6 gap-4 mb-4">
-              <button onClick={()=>{toggleAction2()}} className={`w-1/2 py-3 flex flex-row items-center justify-center montrealMedium text-base ${action2 == "mint" ? "border-b border-b-[#FFE500] text-[#FFE500]" : "border-b border-b-[#757575] text-[#757575]"}`}>Mint</button>
-              <button onClick={()=>{toggleAction2()}} className={`w-1/2 py-3 flex flex-row items-center justify-center montrealMedium text-base ${action2 == "burn" ? "border-b border-b-[#FFE500] text-[#FFE500]" : "border-b border-b-[#757575] text-[#757575]"}`}>Burn</button>
-
+            <div className="mb-4 flex h-fit w-full flex-row items-center justify-around gap-4 px-6">
+              <button
+                onClick={() => {
+                  toggleAction2();
+                }}
+                className={`montrealMedium flex w-1/2 flex-row items-center justify-center py-3 text-base ${
+                  action2 == "mint"
+                    ? "border-b border-b-[#FFE500] text-[#FFE500]"
+                    : "border-b border-b-[#757575] text-[#757575]"
+                }`}
+              >
+                Mint
+              </button>
+              <button
+                onClick={() => {
+                  toggleAction2();
+                }}
+                className={`montrealMedium flex w-1/2 flex-row items-center justify-center py-3 text-base ${
+                  action2 == "burn"
+                    ? "border-b border-b-[#FFE500] text-[#FFE500]"
+                    : "border-b border-b-[#757575] text-[#757575]"
+                }`}
+              >
+                Burn
+              </button>
             </div>
             <div className="flex h-fit w-full flex-row items-center justify-between">
               <h5 className="montreal text-sm text-white">{t("pay")}</h5>
@@ -257,9 +296,7 @@ const Swap = () => {
             <button className="flex h-fit w-full flex-row items-center justify-center gap-2 rounded-xl bg-[#F7E16B] py-2">
               <MdOutlineCompareArrows size={24} color="#1F1330" />
               <span className=" montrealMedium text-xl text-[#1F1330]">
-                {
-                  action2 == "mint" ? "COMMIT MINT" : "COMMIT BURN"
-                }
+                {action2 == "mint" ? "COMMIT MINT" : "COMMIT BURN"}
               </span>
             </button>
           </div>
