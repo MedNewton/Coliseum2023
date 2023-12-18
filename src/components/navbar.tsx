@@ -100,6 +100,10 @@ const Navbar = () => {
 
   const address = useAddress();
 
+  function toggleMobileMenu() {
+    setOpenMobileMenu(!openMobileMenu);
+  }
+
   return (
     <>
       {
@@ -323,7 +327,7 @@ const Navbar = () => {
         // Mobile
       }
       <nav
-        className={`fixed left-0 top-0 z-[9999] flex h-fit w-screen flex-row items-center justify-between px-4 py-6 lg:hidden ${
+        className={`fixed left-0 top-0 z-[999] flex h-fit w-screen flex-row items-center justify-between px-4 py-6 lg:hidden ${
           isScrolled
             ? "rounded-b-lg bg-gradient-to-br from-[#201D26] to-[#1D1B20] shadow-sm shadow-[#5C5667]"
             : "bg-transparent"
@@ -335,77 +339,16 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex flex-row items-center justify-end gap-3">
-          <IoMenu
-            color="#F7E16B"
-            className="cursor-pointer"
-            size={40}
+          <div
+            className="flex h-full w-fit flex-row items-center justify-center"
             onClick={() => {
-              setOpenMobileMenu(true);
+              console.log(openMobileMenu);
+              toggleMobileMenu();
             }}
-          />
-          <MobileMenu isOpen={openMobileMenu} className="">
-            <div className="h-full w-full">
-              <div className="flex h-fit w-full flex-row items-center justify-end px-4 py-6">
-                <IoMdClose size={35} color="#FFE500" />
-              </div>
-              <div className="flex h-full w-full flex-col items-center justify-start gap-20 pt-20">
-                <div className="flex h-fit w-fit flex-col items-center justify-center gap-12">
-                  <Link href={"/"}>
-                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
-                      {t("home")}
-                    </h5>
-                  </Link>
-                  <div className="menuSep h-[1px] w-[90vw] "></div>
-                  <Link
-                    href={"/trade"}
-                    onClick={() => {
-                      setOpenMobileMenu(false);
-                    }}
-                  >
-                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
-                      {t("trade")}
-                    </h5>
-                  </Link>
-                  <div className="menuSep h-[1px] w-[90vw] "></div>
-                  <Link
-                    href={"/stake"}
-                    onClick={() => {
-                      setOpenMobileMenu(false);
-                    }}
-                  >
-                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
-                      {t("stake")}
-                    </h5>
-                  </Link>
-                  <div className="montrealMedium h-[1px] w-[90vw] "></div>
-                  <Link
-                    href={"/about"}
-                    onClick={() => {
-                      setOpenMobileMenu(false);
-                    }}
-                  >
-                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
-                      {t("about")}
-                    </h5>
-                  </Link>
-                  <div className="menuSep h-[1px] w-[90vw] "></div>
-                  <Link
-                    href={"/profile"}
-                    onClick={() => {
-                      setOpenMobileMenu(false);
-                    }}
-                  >
-                    <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
-                      {t("profile")}
-                    </h5>
-                  </Link>
-                </div>
-                <div className="">
-                  <ConnectWallet />
-                </div>
-              </div>
-            </div>
-          </MobileMenu>
+          >
+            <IoMenu color="#F7E16B" className="h-fit w-fit" size={40} />
+          </div>
+
           <Menu
             align={"end"}
             direction="bottom"
@@ -572,6 +515,69 @@ const Navbar = () => {
           </Menu>
         </div>
       </nav>
+      <MobileMenu isOpen={openMobileMenu} className="">
+        <div className="h-full w-full">
+          <div className="flex h-fit w-full flex-row items-center justify-end px-4 py-6">
+            <IoMdClose size={45} color="#FFE500" onClick={toggleMobileMenu} />
+          </div>
+          <div className="flex max-h-screen w-full flex-col items-center justify-start gap-20 pt-10">
+            <div className="flex h-fit w-fit flex-col items-center justify-center gap-8">
+              <Link href={"/"}>
+                <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                  {t("home")}
+                </h5>
+              </Link>
+              <div className="menuSep h-[1px] w-[90vw] "></div>
+              <Link
+                href={"/trade"}
+                onClick={() => {
+                  toggleMobileMenu();
+                }}
+              >
+                <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                  {t("trade")}
+                </h5>
+              </Link>
+              <div className="menuSep h-[1px] w-[90vw] "></div>
+              <Link
+                href={"/stake"}
+                onClick={() => {
+                  toggleMobileMenu();
+                }}
+              >
+                <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                  {t("stake")}
+                </h5>
+              </Link>
+              <div className="menuSep h-[1px] w-[90vw] "></div>
+              <Link
+                href={"/about"}
+                onClick={() => {
+                  toggleMobileMenu();
+                }}
+              >
+                <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                  {t("about")}
+                </h5>
+              </Link>
+              <div className="menuSep h-[1px] w-[90vw] "></div>
+              <Link
+                href={"/profile"}
+                onClick={() => {
+                  toggleMobileMenu();
+                }}
+              >
+                <h5 className="montrealMedium mb-0 text-2xl text-[#F7E16B]">
+                  {t("profile")}
+                </h5>
+              </Link>
+            </div>
+            <div className="">
+              <ConnectWallet />
+            </div>
+          </div>
+        </div>
+      </MobileMenu>
     </>
   );
 };

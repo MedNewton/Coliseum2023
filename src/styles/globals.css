@@ -176,8 +176,8 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .bm-overlay {
-  
-
+  z-index: 1000 !important;
+  position: relative !important;
   top: 0px !important;
   left: 0px !important;
 }
@@ -189,8 +189,14 @@ html::-webkit-scrollbar-thumb:hover {
   left: 0px !important;
   width: 100vw !important;
   height: 100vh !important;
+  max-height: 100vh !important;
 }
 
 .menuSep{
   background: linear-gradient(90deg, rgba(163, 107, 255, 0.00) 0%, #FFE500 50.84%, rgba(163, 110, 253, 0.00) 102.76%) !important;
+}
+
+.bm-burger-button{
+  background-color: red !important;
+  width: fit-content !important;
 }

@@ -20,7 +20,7 @@ const TechnologySection = () => {
       </p>
       <div className="h-fit w-full lg:w-6/12 flex-col items-center justify-start gap-3">
         <div className="mb-3 flex h-fit flex-col lg:flex-row items-center lg:items-stretch justify-between gap-3">
-          <div className="w-full g:w-1/2 flex-grow rounded-xl border border-[#5C5667] bg-[#343238] p-6">
+          <div className="w-full lg:w-1/2 flex-grow rounded-xl border border-[#5C5667] bg-[#343238] p-6">
             <div className="mb-8 flex h-fit w-full flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
               <Image
                 src={icon1}
@@ -39,7 +39,7 @@ const TechnologySection = () => {
             </p>
           </div>
           <div className="w-full lg:w-1/2 flex-grow rounded-xl border border-[#5C5667] bg-[#343238] p-6">
-            <div className="mb-8 flex h-fit w-full flex-col items-start lg:items-center justify-between gap-4">
+            <div className="mb-8 flex h-fit w-full lg:flex-row flex-col items-start lg:items-center justify-between gap-4">
               <Image
                 src={icon2}
                 alt="financial inclusion"
