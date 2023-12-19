@@ -38,7 +38,7 @@ const BuyCMAX = () => {
           </h5>
         </div>
         <div className="flex h-fit w-full flex-row items-center justify-center pt-10 lg:pt-0 lg:w-1/2">
-          <SwapWidget theme={theme} />
+          <SwapWidget theme={darkTheme} />
         </div>
       </div>
       {/*
