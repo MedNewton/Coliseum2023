@@ -34,14 +34,14 @@ const Benefits = () => {
         swipeable
         preventMovementUntilSwipeScrollTolerance={true}
         swipeScrollTolerance={50}
-        className="benefitsCarousel"
+        className="benefitsCarousel block lg:hidden"
       >
         <div className="flex h-fit w-full flex-col items-center justify-between gap-3 rounded-xl border border-[#5C5667] bg-[#343238] px-6 py-16">
           <div className="h-40 w-40">
             <Image src={rewards} alt="earning rewards"></Image>
           </div>
 
-          <h5 className="montrealBold text-center text-xl text-whiteText-500 mt-10">
+          <h5 className="montrealBold mt-10 text-center text-xl text-whiteText-500">
             {t("earningreward")}
           </h5>
         </div>
@@ -49,7 +49,7 @@ const Benefits = () => {
           <div className="h-40 w-40">
             <Image src={security} alt="earning rewards"></Image>
           </div>
-          <h5 className="montrealBold text-center text-xl text-whiteText-500 mt-10">
+          <h5 className="montrealBold mt-10 text-center text-xl text-whiteText-500">
             {t("network")}
           </h5>
         </div>
@@ -57,7 +57,7 @@ const Benefits = () => {
           <div className="h-40 w-40">
             <Image src={appreciation} alt="earning rewards"></Image>
           </div>
-          <h5 className="montrealBold text-center text-xl text-whiteText-500 mt-10">
+          <h5 className="montrealBold mt-10 text-center text-xl text-whiteText-500">
             {t("token")}
           </h5>
         </div>
@@ -65,7 +65,7 @@ const Benefits = () => {
           <div className="h-40 w-40">
             <Image src={liquidity} alt="earning rewards"></Image>
           </div>
-          <h5 className="montrealBold text-center text-xl text-whiteText-500 mt-10">
+          <h5 className="montrealBold mt-10 text-center text-xl text-whiteText-500">
             {t("liquidity")}
           </h5>
         </div>
