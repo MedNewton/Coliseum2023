@@ -1,7 +1,18 @@
 // Components :
-import { Theme, darkTheme, SwapWidget } from "@uniswap/widgets";
+import dynamic from "next/dynamic";
+
 
 // Assets :
+
+const SwapWidget = dynamic(
+  async() => {
+  const res = await import('@uniswap/widgets');
+  return res.SwapWidget;
+  },
+  {ssr: false}
+  )
+
+  
 
 import { useTranslation } from "react-i18next";
 import { MdCompareArrows } from "react-icons/md";
@@ -9,6 +20,7 @@ import { MdCompareArrows } from "react-icons/md";
 const BuyCMAX = () => {
   const { t, i18n } = useTranslation();
 
+  /*
   const theme: Theme = {
     primary: '#FFF',
     secondary: '#A9A9A9',
@@ -19,6 +31,7 @@ const BuyCMAX = () => {
     dialog: '#000',
     
   }
+  */
 
   return (
     <section className="flex h-fit w-full flex-col items-start justify-start px-4 py-16 lg:px-20">
@@ -38,7 +51,7 @@ const BuyCMAX = () => {
           </h5>
         </div>
         <div className="flex h-fit w-full flex-row items-center justify-center pt-10 lg:pt-0 lg:w-1/2">
-          <SwapWidget theme={darkTheme} />
+          <SwapWidget />
         </div>
       </div>
       {/*
