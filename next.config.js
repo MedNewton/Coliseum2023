@@ -13,7 +13,7 @@ const nextConfig = {
     },
     reactStrictMode: true,
     swcMinify: true,
-    transpilePackages: ['@lifi/widget', '@lifi/wallet-management'],
+    transpilePackages: ['@lifi/widget', '@lifi/wallet-management','@uniswap/widgets', '@uniswap/conedison'],
     i18n: {
       locales: ["en"],
       defaultLocale: "en",
