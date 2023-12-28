@@ -27,83 +27,96 @@ const MarketsSection = () => {
         {t('marketspara')}
       </p>
       <Marquee loop={0} pauseOnHover={true}>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.mexc.com/"} target="_blank">
           <Image src={icon1} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.coinstore.com/"} target="_blank">
           <Image src={icon2} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.cobo.com/"} target="_blank">
           <Image src={icon3} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.xt.com/en"} target="_blank">
           <Image src={icon4} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://enordigital.com/markets"} target="_blank">
           <Image src={icon5} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.poolin.com/"} target="_blank">
           <Image src={icon6} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.mexc.com/"} target="_blank">
           <Image src={icon1} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.coinstore.com/"} target="_blank">
           <Image src={icon2} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.cobo.com/"} target="_blank">
           <Image src={icon3} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.xt.com/en"} target="_blank">
           <Image src={icon4} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://enordigital.com/markets"} target="_blank">
           <Image src={icon5} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.poolin.com/"} target="_blank">
           <Image src={icon6} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.mexc.com/"} target="_blank">
           <Image src={icon1} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.coinstore.com/"} target="_blank">
           <Image src={icon2} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.cobo.com/"} target="_blank">
           <Image src={icon3} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.xt.com/en"} target="_blank">
           <Image src={icon4} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://enordigital.com/markets"} target="_blank">
           <Image src={icon5} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.poolin.com/"} target="_blank">
           <Image src={icon6} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.mexc.com/"} target="_blank">
           <Image src={icon1} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.coinstore.com/"} target="_blank">
           <Image src={icon2} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.cobo.com/"} target="_blank">
           <Image src={icon3} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.xt.com/en"} target="_blank">
           <Image src={icon4} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://enordigital.com/markets"} target="_blank">
           <Image src={icon5} alt="markets" className=" scale-50"></Image>
         </Link>
-        <Link href={""} target="_blank">
+        <Link href={"https://www.poolin.com/"} target="_blank">
           <Image src={icon6} alt="markets" className=" scale-50"></Image>
         </Link>
-        
-        
-       
-        
-        
+        <Link href={"https://www.mexc.com/"} target="_blank">
+          <Image src={icon1} alt="markets" className=" scale-50"></Image>
+        </Link>
+        <Link href={"https://www.coinstore.com/"} target="_blank">
+          <Image src={icon2} alt="markets" className=" scale-50"></Image>
+        </Link>
+        <Link href={"https://www.cobo.com/"} target="_blank">
+          <Image src={icon3} alt="markets" className=" scale-50"></Image>
+        </Link>
+        <Link href={"https://www.xt.com/en"} target="_blank">
+          <Image src={icon4} alt="markets" className=" scale-50"></Image>
+        </Link>
+        <Link href={"https://enordigital.com/markets"} target="_blank">
+          <Image src={icon5} alt="markets" className=" scale-50"></Image>
+        </Link>
+        <Link href={"https://www.poolin.com/"} target="_blank">
+          <Image src={icon6} alt="markets" className=" scale-50"></Image>
+        </Link>
       </Marquee>
     </section>
   );

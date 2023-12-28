@@ -19,7 +19,7 @@ const BackedTokensSection = () => {
       </p>
       <div className="flex h-fit w-11/12 lg:w-7/12 flex-col lg:flex-row items-stretch justify-between gap-2 rounded-xl shadow-sm shadow-[#24222A]">
         <div
-          className="flex h-fit w-full lg:w-1/2 flex-col flex-grow items-start justify-center gap-1 rounded-xl bg-cover bg-center bg-no-repeat px-3 py-12"
+          className="flex  w-full lg:w-1/2 flex-col flex-grow items-start justify-center gap-1 rounded-xl bg-cover bg-center bg-no-repeat px-3 py-12"
           style={{
             backgroundImage: `url('${shadesBg.src}')`,
           }}

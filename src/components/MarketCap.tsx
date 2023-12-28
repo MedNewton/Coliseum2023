@@ -21,7 +21,7 @@ const MarketCap = () => {
           <h5 className="montrealBold mb-2 text-3xl text-[#F7E16B]">
             {t('authentic')}
           </h5>
-          <h5 className="montrealBold text-3xl text-white">
+          <h5 className="montrealBold text-3xl text-center lg:text-left text-white">
           {t('sourced')}
           </h5>
           <div className="my-8 flex h-fit w-fit flex-row items-center justify-between gap-3">

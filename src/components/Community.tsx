@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 
 // Assets :
@@ -26,16 +26,16 @@ const CommunitySection = () => {
         {t('communityparagraph')}
       </p>
       <div className="my-6 flex h-fit w-full flex-row items-center justify-center gap-8">
-        <Link href={""}>
+        <Link href={"https://www.notion.so/"}>
           <RxNotionLogo color="#FFFFFF" size={35} />
         </Link>
-        <Link href={""}>
+        <Link href={"https://github.com/ColiseumProject/Coliseum2023"}>
           <RxGithubLogo color="#FFFFFF" size={35} />
         </Link>
-        <Link href={""}>
+        <Link href={"https://www.linkedin.com/company/coliseum-cmax/"}>
           <RxLinkedinLogo color="#FFFFFF" size={35} />
         </Link>
-        <Link href={""}>
+        <Link href={"https://twitter.com/CMAX_official"} target="_blank">
           <RiTwitterXFill color="#FFFFFF" size={35} />
         </Link>
       </div>

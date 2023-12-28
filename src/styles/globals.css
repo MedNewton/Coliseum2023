@@ -160,7 +160,7 @@ html::-webkit-scrollbar-thumb:hover {
   -moz-animation: rotating 20s linear infinite;
   -ms-animation: rotating 20s linear infinite;
   -o-animation: rotating 20s linear infinite;
-  animation: rotating 20s linear infinite;
+  animation: rotating 30s linear infinite;
 }
 
 .tw-connected-wallet {
