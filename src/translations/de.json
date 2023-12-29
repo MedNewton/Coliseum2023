@@ -121,5 +121,8 @@
     "holding": "Halten",
     "cmax": "100 CMAX",
     "balance" : "Gleichgewicht",
-    "receive" : "Du erhältst"
+    "receive" : "Du erhältst",
+    "chainLinkOracle" : "Chainlink ist ein dezentrales Oracle-Netzwerk, das reale Daten für Smart Contracts auf der Blockchain bereitstellt. Smart Contracts sind vorab festgelegte Vereinbarungen auf der Blockchain, die Informationen auswerten und automatisch ausführen, wenn bestimmte Bedingungen erfüllt sind.",
+    "layerZeroText" : "LayerZero ist ein Omnichain-Interoperabilitätsprotokoll, das für die einfache Nachrichtenübermittlung über Ketten hinweg entwickelt wurde. LayerZero bietet eine authentische und garantierte Nachrichtenzustellung mit konfigurierbarer Vertrauenslosigkeit.",
+    "uniswapText" : "Das Uniswap-Protokoll ist die größte dezentrale Börse für den Austausch von Kryptowährungstoken auf Ethereum und anderen beliebten Blockchains. Sie wurde 2018 gegründet und ist mit einem Handelsvolumen von über 1,5 Billionen US-Dollar und 250 Millionen Swaps die weltweit größte und beliebteste dezentrale Börse."
   }

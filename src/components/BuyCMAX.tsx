@@ -39,13 +39,7 @@ const BuyCMAX = () => {
             {t("buy")} CMAX
           </h5>
           <h5 className="montrealMedium mb-4 text-2xl text-whiteText-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt.
+          {t("uniswapText")}
           </h5>
         </div>
         <div className="flex h-fit w-full flex-row items-center justify-center pt-10 lg:w-1/2 lg:pt-0">

@@ -119,5 +119,8 @@
     "accountStats" : "您的帐户统计信息",
     "spendings" : "总支出",
     "totalbenefit" : "总效益",
-    "totalassetvalue" : "总资产价值"
+    "totalassetvalue" : "总资产价值",
+    "chainLinkOracle" : "Chainlink 是一个去中心化的预言机网络，为区块链上的智能合约提供真实世界的数据。智能合约是区块链上预先指定的协议，它评估信息并在满足某些条件时自动执行。",
+    "layerZeroText" : "LayerZero 是一种全链互操作协议，专为跨链轻量级消息传递而设计。 LayerZero 通过可配置的去信任性提供真实且有保障的消息传递。",
+    "uniswapText" : "Uniswap 协议是最大的去中心化交易所，用于在以太坊和其他流行的区块链上交换加密货币代币。它于 2018 年推出，是全球最大、最受欢迎的去中心化交易所，交易量超过 1.5 万亿美元，掉期交易量达 2.5 亿次。"
   }

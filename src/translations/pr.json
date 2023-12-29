@@ -119,5 +119,8 @@
     "roadmaptitle1": "Lançar o primeiro conversor Cmax",
     "roadmaptitle2": "Apresente o ETF Tita",
     "roadmaptitle3": "Ecossistema de Tesouro e Tokens",
-    "roadmaptitle4": "Implementar tecnologia de negociação"
+    "roadmaptitle4": "Implementar tecnologia de negociação",
+    "chainLinkOracle" : "Chainlink é uma rede oracle descentralizada que fornece dados do mundo real para contratos inteligentes no blockchain. Contratos inteligentes são acordos pré-especificados no blockchain que avaliam informações e são executados automaticamente quando determinadas condições são atendidas.",
+    "layerZeroText" : "LayerZero é um protocolo de interoperabilidade omnichain projetado para passagem leve de mensagens entre cadeias. LayerZero fornece entrega de mensagens autêntica e garantida com confiabilidade configurável.",
+    "uniswapText" : "O Protocolo Uniswap é a maior bolsa descentralizada para troca de tokens de criptomoeda no Ethereum e outros blockchains populares. Lançada em 2018, é a maior e mais popular bolsa descentralizada do mundo, com mais de 1,5 biliões de dólares em volume de negociação e 250 milhões de swaps."
   }

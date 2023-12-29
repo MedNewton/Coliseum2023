@@ -114,5 +114,8 @@
     "roadmaptitle3": "Ecosistema di Tesoreria e Gettoni",
     "roadmaptitle4": "Implementare la tecnologia di trading",
     "balance" : "Bilancia",
-    "receive" : "Ricevi"
+    "receive" : "Ricevi",
+    "chainLinkOracle" : "Chainlink è una rete oracolare decentralizzata che fornisce dati del mondo reale ai contratti intelligenti sulla blockchain. I contratti intelligenti sono accordi pre-specificati sulla blockchain che valutano le informazioni e vengono eseguiti automaticamente quando vengono soddisfatte determinate condizioni.",
+    "layerZeroText" : "LayerZero è un protocollo di interoperabilità omnichain progettato per il passaggio leggero di messaggi attraverso le catene. LayerZero fornisce la consegna di messaggi autentica e garantita con affidabilità configurabile.",
+    "uniswapText" : "Il protocollo Uniswap è il più grande exchange decentralizzato per lo scambio di token di criptovaluta su Ethereum e altre blockchain popolari. Lanciato nel 2018, è l'exchange decentralizzato più grande e popolare al mondo, con oltre 1,5 trilioni di dollari di volume di scambi e 250 milioni di swap."
   }

@@ -117,6 +117,9 @@
     "totalbenefit" : "total benefits",
     "totalassetvalue" : "total assets value",
     "balance" : "Balance",
-    "receive" : "You Receive"
+    "receive" : "You Receive",
+    "chainLinkOracle" : "Chainlink is a decentralized oracle network that provides real-world data to smart contracts on the blockchain. Smart contracts are pre-specified agreements on the blockchain that evaluate information and automatically execute when certain conditions are met.",
+    "layerZeroText" : "LayerZero is an omnichain interoperability protocol designed for lightweight message passing across chains. LayerZero provides authentic and guaranteed message delivery with configurable trustlessness.",
+    "uniswapText" : "The Uniswap Protocol is the largest decentralized exchange for swapping cryptocurrency tokens on Ethereum and other popular blockchains. Launched in 2018, it is the world's largest and most popular decentralized exchange, with over $1.5 trillion in trading volume and 250 million swaps."  
     
   }

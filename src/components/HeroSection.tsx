@@ -66,22 +66,23 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="hidden h-fit w-5/12 flex-row items-start p-0 lg:flex lg:items-center lg:justify-end">
-          {<BigCircles />}
+        <div className="hidden relative h-fit w-5/12 flex-row items-start p-0 lg:flex lg:items-center lg:justify-end">
+          <div className="absolute top-1 -right-20">{<BigCircles />}</div>
+          
         </div>
         <div
           id="mobileCircles"
-          className="absolute right-0 top-40 z-0 block h-[45vw] w-[45vw] overflow-hidden lg:hidden"
+          className="absolute right-0 top-40 z-0 block h-[55vw] w-[55vw] overflow-hidden lg:hidden"
         >
           <Image
             src={smallCircles}
             alt="small circles"
-            className="absolute -right-10 top-0"
+            className="absolute -right-10 top-0 rotating"
           ></Image>
         </div>
       </div>
-      <div className="mt-6 flex h-fit w-full flex-row items-center justify-center px-3 lg:-mt-32 lg:px-0">
-        <div className="mb-20 flex h-fit w-full flex-col items-center justify-between rounded-xl bg-[#24222A] px-4 py-14 shadow-sm shadow-[#24222A] lg:w-7/12 lg:flex-row lg:px-12 lg:py-8">
+      <div className="mt-16 relative z-50 flex h-fit w-full flex-row items-center justify-center px-3 lg:px-0">
+        <div className="mb-20 flex h-fit w-full flex-col items-center justify-between rounded-xl bg-[#24222A] px-4 py-14 shadow-sm shadow-[#24222A] md:mt-10 xl:mt-0 md:w-10/12 xl:w-7/12 xl:flex-row xl:px-12 xl:py-8">
           <div className="flex h-fit w-full flex-col items-start justify-end gap-2 lg:w-3/5">
             <h5 className="montrealMedium w-full text-center text-2xl text-[#F7E16B] lg:text-left">
               {t("downloadhead1")}

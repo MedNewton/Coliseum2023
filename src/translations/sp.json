@@ -113,5 +113,8 @@
     "roadmaptitle3": "Ecosistema de tesorería y tokens",
     "roadmaptitle4": "Implementar tecnología comercial",
     "balance" : "Balance",
-    "receive" : "Recibes"
+    "receive" : "Recibes",
+    "chainLinkOracle" : "Chainlink es una red Oracle descentralizada que proporciona datos del mundo real a contratos inteligentes en blockchain. Los contratos inteligentes son acuerdos preespecificados en blockchain que evalúan información y se ejecutan automáticamente cuando se cumplen ciertas condiciones.",
+    "layerZeroText" : "LayerZero es un protocolo de interoperabilidad omnichain diseñado para el paso de mensajes ligeros a través de cadenas. LayerZero proporciona entrega de mensajes auténtica y garantizada con confiabilidad configurable.",
+    "uniswapText" : "El Protocolo Uniswap es el mayor intercambio descentralizado para intercambiar tokens de criptomonedas en Ethereum y otras cadenas de bloques populares. Lanzado en 2018, es el intercambio descentralizado más grande y popular del mundo, con más de 1,5 billones de dólares en volumen de operaciones y 250 millones de swaps."
 }

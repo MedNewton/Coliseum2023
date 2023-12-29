@@ -28,7 +28,7 @@ import { IoChevronDown } from "react-icons/io5";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { CiMenuFries } from 'react-icons/ci'
+import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
@@ -340,7 +340,7 @@ const Navbar = () => {
             <Image src={logo} width={60} height={65} alt=""></Image>
           </Link>
         </div>
-        <div className="w-fit h-fit flex flex-row items-center justify-end gap-3">
+        <div className="flex h-fit w-fit flex-row items-center justify-end gap-3">
           <div
             className="flex h-fit w-fit flex-row items-center justify-center"
             onClick={() => {
@@ -567,7 +567,15 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="">
-              <ConnectWallet />
+              <div
+                className={`flex flex-row items-center justify-center gap-0 rounded-2xl ${
+                  address ? "" : "bg-[#ffe500]"
+                } px-2 py-1`}
+              >
+                {address ? "" : <LiaWalletSolid color="#000000" size={30} />}
+
+                <ConnectWallet theme={"dark"} className=" bg-transparent p-0" />
+              </div>
             </div>
           </div>
         </div>

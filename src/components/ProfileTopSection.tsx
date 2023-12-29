@@ -56,18 +56,18 @@ const ProfileTopSection = () => {
         <div className="aspect-square w-3/5 relative z-50 rounded-full border-4 border-[#F7E16B] bg-slate-400 shadow-sm shadow-[#F7E16B]"></div>
         <div className="flex h-fit w-full -mt-8 relative z-10 flex-col items-center justify-start gap-6 py-14 px-2 bg-[#343238] border border-[#5C5667] rounded-2xl ">
           <h5 className="montrealBold text-4xl capitalize text-[#F7E16B]">
-            Sebastian Mathew
+            Coliseum User #1
           </h5>
           <div className="flex h-fit w-fit flex-row items-center justify-center">
             <h5 className="montrealMedium text-center w-10/12 text-xl text-whiteText-500">
-              1234 NW Bobcat Lane, St. Robert, MO 65584-5678.
+              xxxx - xxxxx - xxxxx - xxxxx - xxxx
             </h5>
           </div>
           <h5 className="montrealMedium w-fit h-fit px-6 py-1 rounded-full mt-4 text-3xl capitalize text-black bg-[#F7E16B] ">
             {t("networth")}
           </h5>
           <h5 className="montrealMedium text-3xl text-whiteText-500">
-            $500,000,000.000
+          $000,000,000.000
           </h5>
         </div>
       </div>

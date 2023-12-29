@@ -16,7 +16,7 @@ const AccountStats = () => {
               {t('spendings')}
             </h5>
             <h5 className="montrealMedium text-3xl text-whiteText-500">
-              $500,000,000.000
+              $000,000,000.000
             </h5>
           </div>
           <div className="h-fit w-fit">
@@ -24,7 +24,7 @@ const AccountStats = () => {
               {t('totalbenefit')}
             </h5>
             <h5 className="montrealMedium text-3xl text-whiteText-500">
-              $500,000,000.000
+              $000,000,000.000
             </h5>
           </div>
           <div className="h-fit w-fit">
@@ -32,7 +32,7 @@ const AccountStats = () => {
               {t('totalassetvalue')}
             </h5>
             <h5 className="montrealMedium text-3xl text-whiteText-500">
-              $500,000,000.000
+              $000,000,000.000
             </h5>
           </div>
         </div>

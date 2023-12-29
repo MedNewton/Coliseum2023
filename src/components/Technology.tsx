@@ -33,9 +33,7 @@ const TechnologySection = () => {
               </h5>
             </div>
             <p className="montreal w-11/12 text-left text-xl lg:text-lg leading-normal text-whiteText-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu
-              sem in magna tristique mollis quis in lacus. Cras sagittis magna
-              enim, a accumsan tellus accumsan non
+            {t('chainLinkOracle')}
             </p>
           </div>
           <div className="w-full lg:w-1/2 flex-grow rounded-xl border border-[#5C5667] bg-[#343238] p-6">
@@ -51,9 +49,7 @@ const TechnologySection = () => {
               </h5>
             </div>
             <p className="montreal w-11/12 text-left text-xl lg:text-lg leading-normal text-whiteText-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu
-              sem in magna tristique mollis quis in lacus. Cras sagittis magna
-              enim, a accumsan tellus accumsan non.
+            {t('layerZeroText')}
             </p>
           </div>
         </div>
