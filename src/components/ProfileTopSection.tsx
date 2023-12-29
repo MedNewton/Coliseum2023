@@ -36,19 +36,19 @@ const ProfileTopSection = () => {
             {t("hi")},
           </h5>
           <h5 className="montrealBold text-4xl capitalize text-[#F7E16B]">
-            Sebastian Mathew
+          Coliseum User #1
           </h5>
           <div className="flex h-fit w-fit flex-row items-center justify-normal">
             <CiLocationOn size={20} color="#F7E16B" />
             <h5 className="montrealMedium text-xl text-whiteText-500">
-              1234 NW Bobcat Lane, St. Robert, MO 65584-5678.
+            xxxx - xxxxx - xxxxx - xxxxx - xxxx
             </h5>
           </div>
           <h5 className="montrealMedium mt-4 text-3xl capitalize text-[#F7E16B]">
             {t("networth")}
           </h5>
           <h5 className="montrealMedium text-3xl text-whiteText-500">
-            $500,000,000.000
+          $000,000,000.000
           </h5>
         </div>
       </div>
