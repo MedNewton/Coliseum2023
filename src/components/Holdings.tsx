@@ -23,7 +23,7 @@ const Holdings = () => {
           <div className="flex w-10/12 lg:w-fit flex-row items-center justify-start lg:justify-around gap-8 rounded-lg bg-[#343238] py-3 px-6 ">
             <Image src={eth} alt="eth" height={60} width={60} className=" grayscale opacity-50"></Image>
             <div className="h-fit w-fit">
-              <h5 className="montreal text-lg text-whiteText-500">Ethereum</h5>
+              <h5 className="montreal text-lg text-whiteText-500">Coin 1</h5>
               <div className="flex h-fit w-fit flex-row items-center justify-start gap-2">
                 <h5 className="montrealBold text-xl text-whiteText-500">$83</h5>
                 <h5 className="montreal text-base text-whiteText-500 opacity-50">
@@ -35,7 +35,7 @@ const Holdings = () => {
           <div className="flex w-10/12 lg:w-fit flex-row items-center justify-start lg:justify-around gap-8 rounded-lg bg-[#343238] py-3 px-6">
             <Image src={mantie} alt="eth" height={60} width={60} className=" grayscale opacity-50"></Image>
             <div className="h-fit w-fit">
-              <h5 className="montreal text-lg text-whiteText-500">Mantie</h5>
+              <h5 className="montreal text-lg text-whiteText-500">Coin 2</h5>
               <div className="flex h-fit w-fit flex-row items-center justify-start gap-2">
                 <h5 className="montrealBold text-xl text-whiteText-500">$83</h5>
                 <h5 className="montreal text-base text-whiteText-500 opacity-50">
@@ -47,7 +47,7 @@ const Holdings = () => {
           <div className="flex w-10/12 lg:w-fit flex-row items-center justify-start lg:justify-around gap-8 rounded-lg bg-[#343238] py-3 px-6">
             <Image src={polygon} alt="eth" height={60} width={60} className=" grayscale opacity-50"></Image>
             <div className="h-fit w-fit">
-              <h5 className="montreal text-lg text-whiteText-500">Polygon</h5>
+              <h5 className="montreal text-lg text-whiteText-500">Coin 3</h5>
               <div className="flex h-fit w-fit flex-row items-center justify-start gap-2">
                 <h5 className="montrealBold text-xl text-whiteText-500">$83</h5>
                 <h5 className="montreal text-base text-whiteText-500 opacity-50">
@@ -59,7 +59,7 @@ const Holdings = () => {
           <div className="flex w-10/12 lg:w-fit flex-row items-center justify-start lg:justify-around gap-8 rounded-lg bg-[#343238] py-3 px-6">
             <Image src={bnb} alt="eth" height={60} width={60} className=" grayscale opacity-50"></Image>
             <div className="h-fit w-fit">
-              <h5 className="montreal text-lg text-whiteText-500">BNB Coin</h5>
+              <h5 className="montreal text-lg text-whiteText-500">Coin 4</h5>
               <div className="flex h-fit w-fit flex-row items-center justify-start gap-2">
                 <h5 className="montrealBold text-xl text-whiteText-500">$83</h5>
                 <h5 className="montreal text-base text-whiteText-500 opacity-50">
