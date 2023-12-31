@@ -43,7 +43,7 @@ const BuyCMAX = () => {
           </h5>
         </div>
         <div className="flex h-fit w-full flex-row items-center justify-center pt-10 lg:w-1/2 lg:pt-0">
-          <SwapWidget theme={theme} />
+          <SwapWidget theme={theme} defaultOutputTokenAddress='0xe6AbA037067A84DC6a21e3eA56918A48e33cb2D7' />
         </div>
       </div>
       {/*
