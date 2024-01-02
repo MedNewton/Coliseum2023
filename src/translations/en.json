@@ -120,6 +120,6 @@
     "receive" : "You Receive",
     "chainLinkOracle" : "Chainlink is a decentralized oracle network that provides real-world data to smart contracts on the blockchain. Smart contracts are pre-specified agreements on the blockchain that evaluate information and automatically execute when certain conditions are met.",
     "layerZeroText" : "LayerZero is an omnichain interoperability protocol designed for lightweight message passing across chains. LayerZero provides authentic and guaranteed message delivery with configurable trustlessness.",
-    "uniswapText" : "The Uniswap Protocol is the largest decentralized exchange for swapping cryptocurrency tokens on Ethereum and other popular blockchains. Launched in 2018, it is the world's largest and most popular decentralized exchange, with over $1.5 trillion in trading volume and 250 million swaps."  
-    
+    "uniswapText" : "The Uniswap Protocol is the largest decentralized exchange for swapping cryptocurrency tokens on Ethereum and other popular blockchains. Launched in 2018, it is the world's largest and most popular decentralized exchange, with over $1.5 trillion in trading volume and 250 million swaps." ,
+    "uniswapText2" : "Coliseum CMAX has opted for Uniswap for its token swaps due to the decentralized and automated features of the Uniswap protocol. By leveraging Uniswap's smart contract-based, trustless exchange model, Coliseum CMAX ensures a transparent and efficient trading experience, eliminating the need for centralized exchanges and reducing counterparty risk. Uniswap's automated market maker (AMM) system also ensures liquidity, facilitating seamless and decentralized token swaps for a broader user base."
   }
