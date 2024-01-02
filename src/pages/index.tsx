@@ -10,7 +10,7 @@ import MarketsSection from '@/components/Markets'
 import CommunitySection from '@/components/Community'
 import Footer from '@/components/Footer'
 // Assets 
-import logo from '@assets/images/logo.png'
+import logo from '@assets/images/lg.png'
 
 const HomePage: NextPage = () => {
 	return (

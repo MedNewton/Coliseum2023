@@ -8,7 +8,7 @@ import Swap from "@/components/Swap";
 import CommunitySection from "@/components/Community";
 import Footer from "@/components/Footer";
 // Assets
-import logo from "@assets/images/logo.png";
+import logo from "@assets/images/lg.png";
 import bigChart from "@assets/images/bigChart.png";
 
 const SwapPage: NextPage = () => {

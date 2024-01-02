@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 // Assets :
-import logo from "@assets/images/logo.png";
+import logo from "@assets/images/lg.png";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();

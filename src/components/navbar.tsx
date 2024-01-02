@@ -12,7 +12,7 @@ import { darkTheme, lightTheme } from "@thirdweb-dev/react";
 import { slide as MobileMenu } from "react-burger-menu";
 
 // Assets :
-import logo from "@assets/images/logo.png";
+import logo from "@assets/images/lg.png";
 import { useEffect, useState } from "react";
 import EnglishFlag from "@assets/images/english.png";
 import ItalianFlag from "@assets/images/italian.png";

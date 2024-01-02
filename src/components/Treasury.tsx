@@ -3,7 +3,7 @@ import Image from "next/image";
 
 // Assets :
 import shadesBg from "@assets/images/shadesBg1.png";
-import logo from "@assets/images/logo.png";
+import logo from "@assets/images/lg.png";
 import tita from '@assets/images/tita.png'
 import { GoArrowDownRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
