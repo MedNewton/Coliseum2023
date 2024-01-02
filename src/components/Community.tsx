@@ -35,7 +35,7 @@ const CommunitySection = () => {
         <Link href={"https://www.linkedin.com/company/coliseum-cmax/"}>
           <RxLinkedinLogo color="#FFFFFF" size={35} />
         </Link>
-        <Link href={"https://twitter.com/CMAX_official"} target="_blank">
+        <Link href={"https://twitter.com/cmax_coliseum?s=21"} target="_blank">
           <RiTwitterXFill color="#FFFFFF" size={35} />
         </Link>
       </div>
