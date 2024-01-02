@@ -9,7 +9,7 @@ import PandL from '@/components/PandL'
 import Holdings from '@/components/Holdings'
 import Footer from '@/components/Footer'
 // Assets 
-import logo from '@assets/images/logo.png'
+import logo from '@assets/images/lg.png'
 
 const Trade: NextPage = () => {
 	return (
