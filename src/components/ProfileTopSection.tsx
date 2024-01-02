@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { useBalance } from "@thirdweb-dev/react";
 // Assets :
 
 import { CiLocationOn } from "react-icons/ci";
@@ -10,6 +10,8 @@ import { useTranslation } from "react-i18next";
 
 const ProfileTopSection = () => {
   const { t, i18n } = useTranslation();
+  const tokenAddress = "0xe6AbA037067A84DC6a21e3eA56918A48e33cb2D7";
+  const { data, isLoading } = useBalance(tokenAddress);
 
   return (
     <section className="flex h-fit w-full flex-col items-start justify-start px-4 pb-20 pt-44 lg:px-20">
@@ -48,7 +50,7 @@ const ProfileTopSection = () => {
             {t("networth")}
           </h5>
           <h5 className="montrealMedium text-3xl text-whiteText-500">
-          $000,000,000.000
+          {data?.displayValue} CMAX
           </h5>
         </div>
       </div>
