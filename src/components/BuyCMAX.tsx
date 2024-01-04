@@ -13,6 +13,7 @@ const SwapWidget = dynamic(
 
 import { useTranslation } from "react-i18next";
 import { MdCompareArrows } from "react-icons/md";
+import Link from "next/link";
 
 const BuyCMAX = () => {
   const { t, i18n } = useTranslation();
@@ -28,9 +29,9 @@ const BuyCMAX = () => {
   };
 
   return (
-    <section className="flex h-fit w-full flex-col items-start justify-start px-4 py-16 lg:px-20">
+    <section className="flex h-fit w-full flex-col items-start justify-start px-4 py-16 lg:px-0">
       <div className="flex h-fit w-full flex-col items-start justify-center px-2 py-8 lg:flex-row lg:px-20">
-        <div className="flex h-fit w-full flex-col items-start justify-start lg:w-1/2">
+        <div className="flex h-fit w-full flex-col items-start justify-start lg:w-full">
           <h5 className="montrealMedium mb-6 text-4xl text-[#F7E16B]">
             {t("buy")} CMAX
           </h5>
@@ -40,20 +41,11 @@ const BuyCMAX = () => {
           <h5 className="montrealMedium mb-8 text-2xl text-whiteText-500">
             {t("uniswapText2")}
           </h5>
-        </div>
-        <div className="flex h-fit w-full flex-row items-center justify-end pt-10 lg:w-1/2 lg:pt-0">
-          <iframe
-            src="https://app.uniswap.org/swap?outputCurrency=0xe6AbA037067A84DC6a21e3eA56918A48e33cb2D7"
-            className=" mx-0 mb-1 mt-0 block rounded-2xl border-none h-[600px] w-full lg:w-10/12 overflow-x-hidden"
-            id="uniswapFrame"
-            scrolling="no"
-            style={{
-              boxShadow: '0px 0px 40px 1px #311C31'
-            }}
-          />
-          {/*
-            <SwapWidget theme={theme} defaultOutputTokenAddress='0xe6AbA037067A84DC6a21e3eA56918A48e33cb2D7' />
-            */}
+          <Link target="_blank" className="w-full lg:w-fit" href="https://app.uniswap.org/swap?chain=ethereum&outputCurrency=0xe6AbA037067A84DC6a21e3eA56918A48e33cb2D7">
+            <button className="montrealMedium w-full lg:w-fit flex flex-row items-center justify-center rounded-lg bg-[#F7E16B] px-8 py-3 text-lg uppercase text-[#1F1D26] lg:text-xl ">
+              {t("buy")} CMAX
+            </button>
+          </Link>
         </div>
       </div>
       {/*
