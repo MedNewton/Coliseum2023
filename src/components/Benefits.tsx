@@ -17,7 +17,7 @@ const Benefits = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className="flex h-fit w-full flex-col items-start justify-start px-4 pt-44 lg:px-20">
+    <section className="flex h-fit w-full flex-col items-start justify-start px-4 py-16 lg:px-20">
       <h5 className="montrealBold mb-4 text-4xl text-[#F7E16B]">
         {t("stakebenefit")}
       </h5>
