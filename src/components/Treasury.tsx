@@ -20,7 +20,7 @@ const TreasurySection = () => {
       <p className="montreal mb-12 mt-6 w-11/12 lg:w-7/12 text-center text-lg text-whiteText-500">
         {t('treasuryparagraph')}
       </p>
-      <div className="flex h-fit w-full lg:w-7/12 flex-col lg:flex-row items-stretch justify-between gap-2 rounded-xl bg-[#24222A] p-3 lg:p-6 shadow-sm shadow-[#24222A]">
+      <div className="flex h-fit w-full md:w-10/12 xl:w-7/12 flex-col lg:flex-row items-stretch justify-between gap-2 rounded-xl bg-[#24222A] p-3 lg:p-6 shadow-sm shadow-[#24222A]">
         <div
           className="flex h-fit w-full lg:w-1/2 flex-col items-start justify-center gap-1 rounded-xl bg-cover bg-center bg-no-repeat px-3 py-12"
           style={{

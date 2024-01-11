@@ -11,11 +11,11 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
   return (
     <footer className="flex h-fit w-full flex-col items-center justify-center bg-[#141315] py-6 ">
-      <Link href={"/"}>
-        <Image src={logo} alt="coliseum" className=" lg:scale-[0.6]"></Image>
+      <Link href={"/"} className="w-fit h-fit">
+        <Image src={logo} alt="coliseum" className="md:h-32 md:w-32 xl:scale-[0.6]"></Image>
       </Link>
 
-      <div className="my-8 flex flex-col items-center justify-evenly gap-8 lg:my-0 lg:flex-row lg:gap-4">
+      <div className="my-8 flex flex-col items-center justify-evenly gap-8 lg:my-0 md:flex-row lg:gap-4">
       <Link href={"/"}>
           <h5 className="montreal mb-0 text-2xl text-white lg:text-base">
             {t("home")}

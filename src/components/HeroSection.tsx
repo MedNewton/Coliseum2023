@@ -67,7 +67,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hidden relative h-fit w-5/12 flex-row items-start p-0 lg:flex lg:items-center lg:justify-end">
-          <div className="absolute top-1 -right-20">{<BigCircles />}</div>
+          <div className="absolute top-1 md:-right-64 xl:-right-20  md:scale-75 xl:scale-100">{<BigCircles />}</div>
           
         </div>
         <div
@@ -83,21 +83,21 @@ const Hero = () => {
       </div>
       <div className="mt-16 relative z-50 flex h-fit w-full flex-row items-center justify-center px-3 lg:px-0">
         <div className="mb-20 flex h-fit w-full flex-col items-center justify-between rounded-xl bg-[#24222A] px-4 py-14 shadow-sm shadow-[#24222A] md:mt-10 xl:mt-0 md:w-10/12 xl:w-7/12 xl:flex-row xl:px-12 xl:py-8">
-          <div className="flex h-fit w-full flex-col items-start justify-end gap-2 lg:w-3/5">
-            <h5 className="montrealMedium w-full text-center text-2xl text-[#F7E16B] lg:text-left">
+          <div className="flex h-fit w-full md:w-11/12 flex-col items-start justify-end gap-2 xl:w-3/5">
+            <h5 className="montrealMedium w-full text-center text-2xl text-[#F7E16B] xl:text-left">
               {t("downloadhead1")}
               <br />
               {t("downloadhead2")}
             </h5>
 
-            <p className="montreal mx-auto w-11/12 text-center text-lg text-whiteText-500 lg:m-0 lg:w-11/12 lg:text-left">
+            <p className="montreal mx-auto w-11/12 md:w-full text-center text-lg text-whiteText-500 md:mt-4 xl:m-0 xl:w-11/12 xl:text-left">
               📥 {t("downloadparagraph")} 🚀
             </p>
             <div className="mx-auto flex h-full w-2/5 flex-col items-center justify-center lg:hidden">
               <Image src={book} alt="whitepaper" className=" mt-8 lg:mt-0 lg:scale-50"></Image>
             </div>
-            <Link href="https://linktr.ee/coliseumcmax" target="_blank" className="mt-8 mx-auto lg:mx-0">
-              <button className="montrealMedium mx-auto mt-8 flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-xl bg-whiteBackground-500 px-3 py-3 lg:m-0">
+            <Link href="https://linktr.ee/coliseumcmax" target="_blank" className="mt-4 xl:mt-8 mx-auto xl:mx-0">
+              <button className="montrealMedium mx-auto mt-8 flex h-fit w-fit flex-row items-center justify-center gap-2 rounded-xl bg-whiteBackground-500 px-3 py-3 xl:m-0">
                 <FiDownload color="#1F1D26" size={22} />
                 <h5 className=" text-base uppercase text-[#1F1D26]">
                   {t("downloadbutton")}

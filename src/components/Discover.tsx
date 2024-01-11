@@ -25,7 +25,7 @@ const DiscoverSection = () => {
       <p className="montreal mb-12 mt-6 w-11/12 text-center text-lg text-whiteText-500 lg:w-7/12">
         {t("discoverparagraph")}
       </p>
-      <div className="hidden h-fit w-7/12 flex-col items-center justify-start gap-3 lg:flex">
+      <div className="hidden h-fit md:w-10/12 xl:w-7/12 flex-col items-center justify-start gap-3 lg:flex">
         <div className="mb-3 flex h-fit flex-row items-stretch justify-between gap-3">
           <div className="w-1/2 flex-grow rounded-xl border border-[#5C5667] bg-[#343238] p-6">
             <div className="mb-8 flex h-fit w-full flex-row items-center justify-between gap-4">

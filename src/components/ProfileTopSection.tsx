@@ -55,7 +55,7 @@ const ProfileTopSection = () => {
         </div>
       </div>
       <div className="flex h-fit w-full flex-col items-center justify-start lg:hidden">
-        <div className="aspect-square w-3/5 relative z-50 rounded-full border-4 border-[#F7E16B] bg-slate-400 shadow-sm shadow-[#F7E16B]"></div>
+        <div className="aspect-square w-3/5 md:w-2/5 relative z-50 rounded-full border-4 border-[#F7E16B] bg-slate-400 shadow-sm shadow-[#F7E16B]"></div>
         <div className="flex h-fit w-full -mt-8 relative z-10 flex-col items-center justify-start gap-6 py-14 px-2 bg-[#343238] border border-[#5C5667] rounded-2xl ">
           <h5 className="montrealBold text-4xl capitalize text-[#F7E16B]">
             Coliseum User #1
