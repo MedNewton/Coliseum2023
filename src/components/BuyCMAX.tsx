@@ -67,7 +67,7 @@ const BuyCMAX = () => {
           </div>
           <Link
             target="_blank"
-            className="w-full lg:w-fit"
+            className="w-full lg:w-fit relative z-50 "
             href="https://app.uniswap.org/swap?chain=ethereum&outputCurrency=0xe6AbA037067A84DC6a21e3eA56918A48e33cb2D7"
           >
             <button className="montrealMedium flex w-full flex-row items-center justify-center rounded-lg bg-[#F7E16B] px-8 py-3 text-lg uppercase text-[#1F1D26] lg:w-fit lg:text-xl ">
