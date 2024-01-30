@@ -193,7 +193,7 @@ const DiscoverSection = () => {
                 </h5>
               </div>
               <p className="montreal w-11/12 text-left text-xl lg:text-lg leading-normal text-whiteText-500">
-                t{t("benefitparagraphfour")}
+                {t("benefitparagraphfour")}
               </p>
             </div>
             <div className="w-full flex-grow rounded-xl border border-[#5C5667] bg-[#343238] p-8">
