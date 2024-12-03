@@ -50,11 +50,11 @@ const BuyCMAX = () => {
           </h5>
           <div className="mb-8 flex flex-row items-center justify-start gap-3 lg:gap-2">
             <h5 className="montrealMedium text-xl text-whiteText-500">
-              Smart Contract : 0xe6AbA...cb2D7
+              Smart Contract : 0x9a76e...dd22
             </h5>
             <div className="relative z-50 flex h-fit w-fit cursor-pointer flex-row items-center justify-center rounded-full bg-[#F7E16B] p-2 ">
               <CopyToClipboard
-                text={"0xe6AbA037067A84DC6a21e3eA56918A48e33cb2D7"}
+                text={"0x9a76e93f73705b83549c439a79b9ab429c8cdd22"}
                 onCopy={() => setCopied(true)}
               >
                 {
@@ -68,7 +68,7 @@ const BuyCMAX = () => {
           <Link
             target="_blank"
             className="w-full lg:w-fit relative z-50 "
-            href="https://app.uniswap.org/swap?chain=ethereum&outputCurrency=0xe6AbA037067A84DC6a21e3eA56918A48e33cb2D7"
+            href="https://app.uniswap.org/explore/tokens/ethereum/0x9a76e93f73705b83549c439a79b9ab429c8cdd22"
           >
             <button className="montrealMedium flex w-full flex-row items-center justify-center rounded-lg bg-[#F7E16B] px-8 py-3 text-lg uppercase text-[#1F1D26] lg:w-fit lg:text-xl ">
               {t("buy")} CMAX
